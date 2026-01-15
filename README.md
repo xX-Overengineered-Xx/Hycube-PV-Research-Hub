@@ -1,4 +1,8 @@
-Hier geht es um technische Daten zu PV-Wechselrichter-Batteriesystemen der insolventen Firma Hycube. 
+Hier geht darum, technische Daten zu PV-Wechselrichter-Batteriesystemen der insolventen Firma Hycube zu sammeln. Hilfe zur Selbsthilfe.
+Dateien werden so umbenannt, dass man versteht, was drin ist.
+Fall jemand sein Copyright verletzt sieht, sagt bitte einfach Bescheid, dann reden wir drüber.
+
+
 Ich fange mit dem "e.Compact neo" an, weil ich solch ein System besitze.
 
 Die Hycube-"Waschmaschine" eCompact neo besteht aus drei Teilen:
