@@ -3,12 +3,13 @@ Dateien sind aus dem Internet zusammengesucht und wurden so umbenannt, dass man 
 
 Oben rechts unter 'Code' kann man mit 'Download ZIP' alles auf einmal runterladen.
 
-Fall jemand sein Copyright verletzt sieht, sagt bitte einfach Bescheid, dann reden wir drüber.
+Falls jemand sein Copyright verletzt sieht, sagt bitte einfach Bescheid, dann reden wir drüber.
 
 
 Ich fange mit dem "e.Compact neo" an, weil ich solch ein System besitze.
 
 Die Hycube-"Waschmaschine" eCompact neo besteht aus drei Teilen:
+
 # 1. Wechselrichter Hycube HY-5K-TL-LV
 Das ist ein umgelabelter Sermatec SMT-5KT-LV, der auf der Rückseite des Cube mit Vorderseite nach innen und Kühlrippen nach außen montiert wurde. Dadurch kann man die Status-LEDs nicht sehen.
 Der WR kann etwa 5 kW, deshalb ist die Entladeleistung selbst bei den großen Batteriesätzen auf 4,8 kW begrenzt.
@@ -56,9 +57,10 @@ Während der Chipkrise wurden in US2000C andere Chips verbaut (erkennbar an E3 o
 https://github.com/Frankkkkk/python-pylontech
 
 # 3. Hycube Controller-Schublade
+BAUSTELLE
 Dies ist der interessanteste Teil, denn die anderen Komponenten sind recht gut dokumentiert, wenn man ihren Namen kennt.
 
-Der zentrale Controller ist ein Chipsee-Minicomputer ("Controller") mit farbigem 5 Zoll-Display mit Touchscreen. Das ist die flache Kunststoffkiste hinter dem Touchscreen rechts. Vermutlich läuft darauf ein minimales Android-Betriebssystem auf einem ARM Cortex-A8. Links auf der Oberseite ist ein Slot für eine microSD-Karte. Auf der Karte ist das Betriebssystem und alle bisherigen Verlaufsdaten, tagesgenau in SQL-Dateien. Über Ethernet-Kabel stellt der Controller auch den Webserver für die Hycube.local-Oberfläche im lokalen LAN-Netzwerk (in jedem Webbrowser).
+Der zentrale Controller ist ein Chipsee-Minicomputer ("Controller") mit farbigem 5 Zoll-Display mit Touchscreen. Das ist die flache Kunststoffkiste hinter dem Touchscreen rechts. Vermutlich läuft darauf ein Embedded Linux-Betriebssystem auf einem ARM Cortex-A8. Links auf der Oberseite ist ein Slot für eine microSD-Karte. Auf der Karte ist das Betriebssystem und alle bisherigen Verlaufsdaten, tagesgenau in SQL-Dateien. Über Ethernet-Kabel stellt der Controller auch den Webserver für die Hycube.local-Oberfläche im lokalen LAN-Netzwerk (in jedem Webbrowser).
 
 Weitere Komponenten
 Hinten ganz links zwei Verteilerblöcke Contaclip 27202.0 für Plus und Minus 48 V.
