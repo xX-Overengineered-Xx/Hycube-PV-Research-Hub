@@ -1,5 +1,6 @@
-Hier geht darum, technische Daten zu PV-Wechselrichter-Batteriesystemen der insolventen Firma Hycube zu sammeln. Hilfe zur Selbsthilfe.
-Dateien werden so umbenannt, dass man versteht, was drin ist.
+Hier sammeln wir technische Daten zu PV-Wechselrichter-Batteriesystemen der insolventen Firma Hycube. Hilfe zur Selbsthilfe.
+Dateien sind aus dem Internet zusammengesucht und wurden so umbenannt, dass man versteht, was drin ist.
+Oben rechts unter 'Code' kann man mit 'Download as ZIP' alles auf einmal runterladen.
 Fall jemand sein Copyright verletzt sieht, sagt bitte einfach Bescheid, dann reden wir drüber.
 
 
