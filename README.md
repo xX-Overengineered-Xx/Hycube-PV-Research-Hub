@@ -23,7 +23,7 @@ Ob der WR von Sermatec für Hycube mit geänderter Firmware versehen wurde oder 
 
 Ersatz: Sermatec baut inzwischen keine Wechselrichter mehr für den Consumer-Bereich, deshalb hat Hycube bei den Tri.aktiv-Geräten auf IMEON gewechselt. Das wäre eine Option, falls ein Sermatec kaputt geht. Wichtig sollte sein, dass ein neuer WR auf der Kompatibilitätsliste von Pylontech steht, damit er die Batterien direkt ansprechen kann, falls der Hycube-Controller mal kaputt geht. Victron macht viel mit Pylontech. Falls man das System mit eigenem statt Hycube-Controller betreiben will/muss ist die Kompatibilität egal, weil der Controller zwischen WR und Batterie kommunizieren kann. Dann muss man aber alles selbst programmieren.
 
-https://github.com/sermatec-opensource
+Siehe auch: https://github.com/sermatec-opensource
 
 # 2. Batteriespeicher
 Der Batteriespeicher besteht aus zwei bis sechs Pylontech US2000C Akku-Packs 48 V mit je 2,4 kWh parallel. 
@@ -53,8 +53,7 @@ Aktuelle [Firmware](https://www.effekta.com/download/firmwareupdate-fuer-us2000c
 Gleich noch ein Hinweis: Es wird allgemein empfohlen, das UpdateTool (vorhandene Version v1.0.10_3) zum aktualisieren der Firmware zu benutzen, nicht BatteryView. 
 Während der Chipkrise wurden in US2000C andere Chips verbaut (erkennbar an E3 oder C3 in der Mitte der Seriennummer), die eine andere Firmware benötigen. Es wird deshalb empfohlen, die unentpackte ZIP-Datei zum Flashen zu benutzen. Das Tool sucht sich die richtige Datei darin selbst.
 
-
-https://github.com/Frankkkkk/python-pylontech
+Siehe auch: https://github.com/Frankkkkk/python-pylontech
 
 # 3. Hycube Controller-Schublade
 BAUSTELLE
