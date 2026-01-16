@@ -47,11 +47,10 @@ Das Programm BatteryView wurde wohl 2014 etwas 'schmutzig' programmiert, deshalb
 
 In Windows den Geräte-Manger öffnen nach "Anschlüsse (COM & LPT)" suchen. Wenn das neue Gerät dort mit einem Warnzeichen (oder unter "andere") auftaucht, muss man noch einen passenden Treiber installieren. COM-Port-Treiber unter Windows werden wohl für immer eine Baustelle bleiben. 
 
-BatteryView (letzte vorhandene Version 3.0.36). 
-Aktuelle [Firmware](https://www.effekta.com/download/firmwareupdate-fuer-us2000c-3000c/) und Programme zum Aufspielen gibt es auf der Seite von EFFEKTA.com. 
+BatteryView (letzte vorhandene Version 3.0.36). https://www.photovoltaikforum.com/thread/201866-wo-finde-ich-die-pylontech-software-battery-view/?postID=4343567#post4343567
 
 Gleich noch ein Hinweis: Es wird allgemein empfohlen, das UpdateTool (vorhandene Version v1.0.10_3) zum aktualisieren der Firmware zu benutzen, nicht BatteryView. 
-Während der Chipkrise wurden in US2000C andere Chips verbaut (erkennbar an E3 oder C3 in der Mitte der Seriennummer), die eine andere Firmware benötigen. Es wird deshalb empfohlen, die unentpackte ZIP-Datei zum Flashen zu benutzen. Das Tool sucht sich die richtige Datei darin selbst.
+Während der Chipkrise wurden in US2000C andere Chips verbaut (erkennbar an E3 oder C3 in der Mitte der Seriennummer), die eine andere Firmware benötigen. Es wird deshalb empfohlen, die unentpackte ZIP-Datei zum Flashen zu benutzen. Das Tool sucht sich die richtige Datei darin selbst. Aktuelle [Firmware](https://www.effekta.com/download/firmwareupdate-fuer-us2000c-3000c/) und das Programm zum Aufspielen gibt es auf der Seite von EFFEKTA.com. 
 
 Siehe auch: https://github.com/Frankkkkk/python-pylontech
 
