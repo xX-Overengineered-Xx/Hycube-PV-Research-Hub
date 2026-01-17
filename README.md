@@ -17,7 +17,7 @@ Siehe [Unterverzeichnis](https://github.com/xX-Overengineered-Xx/Hycube-PV-Resea
 Siehe [Unterverzeichnis](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/tree/main/Pylontech%20US2000C).
 
 # 3. Hycube Controller-Schublade
-Siehe readme.md im Unterverzeichnis.
+Siehe [Unterverzeichnis](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/tree/main/Hycube%20Controller-Schublade).
 
 # 4. Zweiter Wechselrichter ohne Batterieanschluss
 Der Sermatec-WR hat nur Anschlüsse für zwei PV-Strings, deshalb werden alle weiteren Strings über einen zweiten, externen WR bedient, der aber nicht mit den Batterien verbunden ist. Das ist oft ein FoxESS T*-G3, wobei * für die Leistung in kW steht. 
