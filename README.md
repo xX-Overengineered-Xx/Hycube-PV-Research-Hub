@@ -11,7 +11,7 @@ Ich fange mit dem "e.Compact neo" an, weil ich solch ein System besitze.
 Die Hycube-"Waschmaschine" eCompact neo besteht aus drei Teilen:
 
 # 1. Wechselrichter Hycube HY-5K-TL-LV
-Siehe readme.md im Unterverzeichnis.
+Siehe [Unterverzeichnis](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/tree/main/Sermatec%20SMT-5K-TL-LV).
 
 # 2. Batteriespeicher Pylontech UC2000C
 Siehe readme.md im Unterverzeichnis.
