@@ -14,7 +14,7 @@ Die Hycube-"Waschmaschine" eCompact neo besteht aus drei Teilen:
 Siehe [Unterverzeichnis](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/tree/main/Sermatec%20SMT-5K-TL-LV).
 
 # 2. Batteriespeicher Pylontech UC2000C
-Siehe readme.md im Unterverzeichnis.
+Siehe [Unterverzeichnis](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/tree/main/Pylontech%20US2000C).
 
 # 3. Hycube Controller-Schublade
 Siehe readme.md im Unterverzeichnis.
