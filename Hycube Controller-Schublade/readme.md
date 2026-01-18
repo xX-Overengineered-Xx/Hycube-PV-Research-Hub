@@ -1,7 +1,7 @@
 # Hycube Controller-Schublade
 Dies ist der interessanteste Teil, denn die anderen Komponenten sind recht gut dokumentiert, wenn man ihren Namen kennt.
 
-Der zentrale Controller ist ein [Chipsee EPC/PPC-A8-50-C](https://chipsee.com/product/epca8050c/) Minicomputer ("Controller") mit farbigem 5 Zoll-Display mit Touchscreen. Das ist die flache Kunststoffkiste hinter dem Touchscreen rechts. Darauf läuft ein Embedded-Linux-Betriebssystem auf einem ARM Cortex-A8. 
+Der zentrale Controller ist ein [Chipsee EPC-A8-50-C](https://chipsee.com/product/epca8050c/) Minicomputer ("Controller") mit farbigem 5 Zoll-Display mit Touchscreen. Das ist die flache Kunststoffkiste hinter dem Touchscreen rechts. (Genau genommen ist es ein Typ PPC mit Gehäuse, aber die Dokumentation nennt oft nur EPC.) Darauf läuft ein Embedded-Linux-Betriebssystem auf einem ARM Cortex-A8. 
 Links auf der Oberseite ist ein Slot für eine microSD-Karte. Auf der Karte ist das Betriebssystem und alle bisherigen Verlaufsdaten, tagesgenau in SQL-Dateien. Über Ethernet-Kabel stellt der Controller auch den Webserver für die Hycube.local-Oberfläche im lokalen LAN-Netzwerk (in jedem Webbrowser).
 
 Weitere Komponenten
