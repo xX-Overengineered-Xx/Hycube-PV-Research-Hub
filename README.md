@@ -39,8 +39,10 @@ Stichwort Sermatec-App, Konsolenkabel.
 
 # Einfachste Fehlersuche
 Wenn der Controller nicht startet, ist entweder der Controller selbst kaputt (selten) oder die Spannungsversorgung aus der 48 Volt DC-Verbindung zwischen Batterien und Wechselrichter funktioniert nicht. Oft gehen die Batterien nach dem Selbsttest auf Störung und ihre roten ALM-LEDs (Alarm) leuchten. Die Frage ist dann "Sind es die Batterien oder der Wechselrichter?".
+
 Um das heraus zu bekommen, schaltet man zuerst die gesamte Anlage nach Hycube-Bedienungsanleitung aus. Dann zieht man die beiden langen Batteriekabel ab, die zum Wechselrichter führen (Knopf am Stecker drücken, siehe Pylontech-Bedienungsanleitung). Nun sind die Batterien untereinander verbunden, aber nicht mehr mit dem Wechselrichter. Wenn man die Batterien jetzt nacheinander mit ihren Ein-/Aus-Kippschaltern einschaltet und dann an der Masterbatterie (die sonst die Kabel zum WR hat) für mindestens 0,5 Sekunden den roten SW-Knopf drückt, werden alle Batterien geweckt, machen einen Selbsttest und zeigen hoffentlich keinen Fehler mehr.
 Glückwunsch, die teuren Batterien sind okay, es ist wahrscheinlich der Wechselrichter.
+
 Ein Fachmann könnte jetzt im abgeschalteten Zustand eine Durchgangsprüfung zwischen den freien Enden der beiden abgezogenen Batteriekabeln machen. Wenn man dort Null Ohm misst, ist wahrscheinlich der Wechselrichter kaputt.
 
 # Home Assistant
