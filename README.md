@@ -43,7 +43,7 @@ Wenn der Controller nicht startet, ist entweder der Controller selbst kaputt (se
 Um das heraus zu bekommen, schaltet man zuerst die gesamte Anlage nach Hycube-Bedienungsanleitung aus. Dann zieht man die beiden langen Batteriekabel ab, die zum Wechselrichter führen (Knopf am Stecker drücken, siehe Pylontech-Bedienungsanleitung). Nun sind die Batterien untereinander verbunden, aber nicht mehr mit dem Wechselrichter. Wenn man die Batterien jetzt nacheinander mit ihren Ein-/Aus-Kippschaltern einschaltet und dann an der Masterbatterie (die sonst die Kabel zum WR hat) für mindestens 0,5 Sekunden den roten SW-Knopf drückt, werden alle Batterien geweckt, machen einen Selbsttest und zeigen hoffentlich keinen Fehler mehr.
 Glückwunsch, die teuren Batterien sind okay, es ist wahrscheinlich der Wechselrichter.
 
-Ein Fachmann könnte jetzt im abgeschalteten Zustand eine Durchgangsprüfung zwischen den freien Enden der beiden abgezogenen Batteriekabeln machen. Wenn man dort Null Ohm misst, ist wahrscheinlich der Wechselrichter kaputt.
+Ein Fachmann könnte jetzt im abgeschalteten Zustand eine Durchgangsprüfung zwischen den freien Enden der beiden abgezogenen Batteriekabeln machen. Wenn man dort Null Ohm misst, ist wahrscheinlich der Wechselrichter kaputt. Der nächste Schritt wäre jetzt, über die App des Wechselrichters eine Fehlermeldung zu bekommen, zum Beispiel "Bus Insulation Resistance Fault".
 
 Falls trotzdem noch Batterien Fehler melden, liest man sie einzeln oder zusammen per Konsolenkabel und BatteryView aus. 
 
