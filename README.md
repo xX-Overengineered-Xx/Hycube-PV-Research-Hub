@@ -5,6 +5,7 @@ Oben rechts unter 'Code' kann man mit 'Download ZIP' alles auf einmal runterlade
 
 Falls jemand sein Copyright verletzt sieht, sagt bitte einfach Bescheid, dann reden wir drüber.
 
+Für alle Anleitungen gilt: Wenn ihr komplette Elektro-Muggel seid, fragt jemanden, der sich wirklich damit auskennt und lasst den das machen. Also zum Beispiel einen Elektriker, nicht ChatGPT.
 
 Ich fange mit dem "e.Compact neo" an, weil ich solch ein System besitze.
 
@@ -35,6 +36,12 @@ Ersatzstrom für das ganze Haus ist etwas aufwändiger. Es wurde ein automatisch
 Soweit ich es verstehe, ist die Einschaltreihenfolge so, dass zuerst der WR gestartet wird, dann die Batterien, dann der Controller. Das kann bis zu 2 Minuten dauern.
 Leider scheint es so zu sein, dass ein Fehler am WR oder einer Batterie dazu führt, dass der Controller nicht mehr hochfährt, da er aus den 48 V DC-Kabeln zwischen Wechselrichter und Batterie versorgt wird. Das kann ein Hardwarefehler sein, den der WR feststellt oder der Tiefentladeschutz der Batterien. In diesem Fall muss man die Fehler dieses Gerätes zuerst beheben, damit irgendwann der Controller wieder läuft. Zu Testzwecken kann man das Traco-Netzteil auch Fremdversorgen, um den Controller unabhängig vom System zu starten.
 Stichwort Sermatec-App, Konsolenkabel. 
+
+# Einfachste Fehlersuche
+Wenn der Controller nicht startet, ist entweder der Controller selbst kaputt (selten) oder die Spannungsversorgung aus der 48 Volt DC-Verbindung zwischen Batterien und Wechselrichter funktioniert nicht. Oft gehen die Batterien nach dem Selbsttest auf Störung und ihre roten ALM-LEDs (Alarm) leuchten. Die Frage ist dann "Sind es die Batterien oder der Wechselrichter?".
+Um das heraus zu bekommen, schaltet man zuerst die gesamte Anlage nach Hycube-Bedienungsanleitung aus. Dann zieht man die beiden langen Batteriekabel ab, die zum Wechselrichter führen (Knopf am Stecker drücken, siehe Pylontech-Bedienungsanleitung). Nun sind die Batterien untereinander verbunden, aber nicht mehr mit dem Wechselrichter. Wenn man die Batterien jetzt nacheinander mit ihren Ein-/Aus-Kippschaltern einschaltet und dann an der Masterbatterie (die sonst die Kabel zum WR hat) für mindestens 0,5 Sekunden den roten SW-Knopf drückt, werden alle Batterien geweckt, machen einen Selbsttest und zeigen hoffentlich keinen Fehler mehr.
+Glückwunsch, die teuren Batterien sind okay, es ist wahrscheinlich der Wechselrichter.
+Ein Fachmann könnte jetzt im abgeschalteten Zustand eine Durchgangsprüfung zwischen den freien Enden der beiden abgezogenen Batteriekabeln machen. Wenn man dort Null Ohm misst, ist wahrscheinlich der Wechselrichter kaputt.
 
 # Home Assistant
 Da der Hycube-Controller eine Weboberfläche bereitstellt (hycube.local) kann man über eine RESTful-Sensor eine json-Abfrage aller angezeigten Werte starten ([Link](https://community.simon42.com/t/daten-aus-http-abfrage-auswerten/60653)). Einstellen kann man damit aber nichts.
