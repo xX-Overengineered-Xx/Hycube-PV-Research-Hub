@@ -45,6 +45,8 @@ Glückwunsch, die teuren Batterien sind okay, es ist wahrscheinlich der Wechselr
 
 Ein Fachmann könnte jetzt im abgeschalteten Zustand eine Durchgangsprüfung zwischen den freien Enden der beiden abgezogenen Batteriekabeln machen. Wenn man dort Null Ohm misst, ist wahrscheinlich der Wechselrichter kaputt.
 
+Falls trotzdem noch Batterien Fehler melden, liest man sie einzeln oder zusammen per Konsolenkabel und BatteryView aus. 
+
 # Home Assistant
 Da der Hycube-Controller eine Weboberfläche bereitstellt (hycube.local) kann man über eine RESTful-Sensor eine json-Abfrage aller angezeigten Werte starten ([Link](https://community.simon42.com/t/daten-aus-http-abfrage-auswerten/60653)). Einstellen kann man damit aber nichts.
 
