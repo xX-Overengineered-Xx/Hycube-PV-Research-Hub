@@ -10,7 +10,7 @@ Für alle Anleitungen gilt: Wenn ihr komplette Elektro-Muggel seid, fragt jemand
 Ich fange mit dem "e.Compact neo" an, weil ich solch ein System besitze.
 
 # Zusammenfassung, ganz wichtig
-Eine "Hycube-Anlage" ist aus zugekauften Komponenten zusammengestellt. Alle Komponenten, außer dem Wechselrichter, sind einzeln frei nachkaufbar. Sogar der Minicomputer des Controllers. Hycube-Controller und Wechselrichter bilden zusammen die "Hycube-Anlage".
+Eine "Hycube-Anlage e.Compact neo" ist aus zugekauften Komponenten zusammengestellt. Alle Komponenten, außer dem Wechselrichter, sind einzeln frei nachkaufbar. Sogar der Minicomputer des Controllers. Hycube-Controller und Wechselrichter bilden zusammen die "Hycube-Anlage".
 
 Falls der Wechselrichter kaputtgeht, ist es sofort kein Hycube-System mehr. Der Hycube-Controller arbeitet nicht mit anderen Wechselrichtern, kann also weg. Mit einem Wechselrichter von einem anderen Hersteller kauft man praktischerweise auch einen Controller des gleichen Herstellers. 
 
