@@ -10,14 +10,15 @@ Für alle Anleitungen gilt: Wenn ihr komplette Elektro-Muggel seid, fragt jemand
 Ich fange mit dem "e.Compact neo" an, weil ich solch ein System besitze.
 
 # Zusammenfassung, ganz wichtig
-Eine "Hycube-Anlage" ist aus zugekauften Komponenten zusammengestellt. Alle Komponenten, außer dem Wechselrichter, sind einzeln frei nachkaufbar. Sogar der Minicomputer des Controllers. Hycube Controller und Wechselrichter bilden zusammen die "Hycube-Anlage".
+Eine "Hycube-Anlage" ist aus zugekauften Komponenten zusammengestellt. Alle Komponenten, außer dem Wechselrichter, sind einzeln frei nachkaufbar. Sogar der Minicomputer des Controllers. Hycube-Controller und Wechselrichter bilden zusammen die "Hycube-Anlage".
 
-Falls der Wechselrichter kaputtgeht, ist es sofort kein Hycube-System mehr. Der Hycube Controller arbeitet nicht mit anderen Wechselrichtern. Mit einem Wechselrichter von einem anderen Hersteller kauft man praktischerweise auch einen Controller des gleichen Herstellers. 
-Das Problem ist also nicht "Wir müssen ein Hycube-System reparieren, Hycube gibt es nicht mehr und wir haben keine Ahnung", sondern "Wir kaufen einen neuen Wechselrichter und schließen unsere Batterien und PV-Panels an". Das hört sich für einen örtlichen Installateur deutlich netter an.
+Falls der Wechselrichter kaputtgeht, ist es sofort kein Hycube-System mehr. Der Hycube-Controller arbeitet nicht mit anderen Wechselrichtern, kann also weg. Mit einem Wechselrichter von einem anderen Hersteller kauft man praktischerweise auch einen Controller des gleichen Herstellers. 
+
+Das Problem ist also nicht "Wir müssen ein Hycube-System reparieren, Hycube gibt es nicht mehr und wir haben keine Ahnung", sondern "Wir kaufen einen neuen Wechselrichter und schließen unsere Batterien und PV-Panels an". Das hört sich auch für einen örtlichen Installateur deutlich netter an.
 
 Der reine Materialpreis für einen vergleichbaren "einfachen" Hydrid-Wechselrichter (5,x kWp, einphasig 230 V, LV-Batterieanschluss, möglichst von der Pylontech-Kompatibilitätsliste) liegt "so um die 1000 €".
 
-
+*****
 
 Die Hycube-"Waschmaschine" eCompact neo besteht aus drei Teilen:
 
