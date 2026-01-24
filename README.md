@@ -16,7 +16,7 @@ Falls der Wechselrichter kaputtgeht, ist es sofort kein Hycube-System mehr. Der 
 
 Das Problem ist also nicht "Wir müssen ein Hycube-System reparieren, Hycube gibt es nicht mehr und wir haben keine Ahnung", sondern "Wir kaufen einen neuen Wechselrichter und schließen unsere Batterien und PV-Panels an". Das hört sich auch für einen örtlichen Installateur deutlich netter an.
 
-Der reine Materialpreis für einen vergleichbaren "einfachen" Hydrid-Wechselrichter (5,x kWp, einphasig 230 V, LV-Batterieanschluss, möglichst von der Pylontech-Kompatibilitätsliste) liegt "so um die 1000 €".
+Der reine Materialpreis für einen vergleichbaren 'einfachen' Hydrid-Wechselrichter (5,x kWp, einphasig 230 V, LV-Batterieanschluss, möglichst von der Pylontech-Kompatibilitätsliste) liegt "so um die 1000 €".
 
 *****
 
