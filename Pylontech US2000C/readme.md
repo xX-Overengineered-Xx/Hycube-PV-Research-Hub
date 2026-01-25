@@ -22,23 +22,30 @@ In Windows den Geräte-Manger öffnen nach "Anschlüsse (COM & LPT)" suchen. Wen
 
 BatteryView (letzte vorhandene Version 3.0.36). https://www.photovoltaikforum.com/thread/201866-wo-finde-ich-die-pylontech-software-battery-view/?postID=4343567#post4343567
 
-Gleich noch ein Hinweis: Es wird allgemein empfohlen, das UpdateTool (vorhandene Version v1.0.10_3) zum aktualisieren der Firmware zu benutzen, nicht BatteryView. 
+## 2. Pylontech-Akkus Firmware updaten mit UpdateTool
+Zusätzlich sollte man jetzt einmal die neueste Firmware aufspielen. Pylontech veröffentlich keine Beschreibungen, was in der Firmware geändert wurde, aber man kann davon ausgehen, dass sie in der Zwischenzeit Fehler bei den neuen Chips (2021) korrigiert haben. Es wird allgemein empfohlen, das UpdateTool (vorhandene Version v1.0.10_3) zum aktualisieren der Firmware zu benutzen, nicht BatteryView. 
 Während der Chipkrise wurden in US2000C andere Chips verbaut (erkennbar an E3 oder C3 in der Mitte der Seriennummer), die eine andere Firmware benötigen. Es wird deshalb empfohlen, die unentpackte ZIP-Datei zum Flashen zu benutzen. Das Tool sucht sich die richtige Datei darin selbst. Aktuelle [Firmware](https://www.effekta.com/download/firmwareupdate-fuer-us2000c-3000c/) und das Programm zum Aufspielen gibt es auf der Seite von EFFEKTA.com. 
 
-Siehe auch: https://github.com/Frankkkkk/python-pylontech
+## 3. Batterie aufladen mit Labornetzteil
+Wenn der Hycube-Controller aus ist, kann man dem Wechselrichter nicht den Befehl geben, die Batterien aus dem Netz zu laden. Man sollte dann erstmal herausfinden, warum der Controller nicht funktioniert und ob etwas kaputt ist.
 
-## 2. Laden mit Labornetzteil
-Wenn man es besonders gut machen will, kann man mit einem Labornetzteil jede Batterie einzeln mit maximal 5 A auf 52 V laden, dann werden die Zellen durch das Laden balanciert (YouTube [Steve&Julian](https://www.youtube.com/watch?v=4K3RAzwkvss)). Das dauert aber sehr lange. 
+Pylontech schreibt in der Bedienungsanleitung: "2) Bei längerer Lagerung der Batterie muss diese alle sechs Monate aufgeladen werden und es muss sichergestellt sein, dass der Ladungszustand nicht weniger als 90% beträgt. 3) Nach vollständiger Entladung muss die Batterie innerhalb von 12 Stunden wieder aufgeladen werden."
+
+Für alle Anleitungen gilt: Wenn ihr komplette Elektro-Muggel seid, fragt jemanden, der sich wirklich damit auskennt und lasst den das machen. Also zum Beispiel einen Elektriker, nicht ChatGPT.
+
+Die einzige mir bekannte Methode ist, die Pylontech-Batterien einzeln von extern laden, zum Beispiel mit einem DC-Labornetzteil 60 Volt (mindestens 5 Ampere). Kostet bei Amazon ab 65 €. Wie es geht, wird in diesem Video beschrieben: https://www.youtube.com/watch?v=4K3RAzwkvss
+
+Alle Batterien trennen (Kabel abziehen), eine Batterie an Plus und Minus des Netzteils anschließen, 52 V bei 5 A einstellen und lange warten. Der Strom fällt immer weiter, bis die Batterie fast voll ist. Bei 52 V sind die Batterien nicht 100% voll (die offizielle Ladespannung beträgt 53,5 V), aber es ist sicher und reicht, dass die Zellen wieder ausbalanciert werden (min. 92% SoC). Den Vorgang für jede Batterie wiederholen und hinterher alle Batterien miteinander verbinden und sich gemeinsam ausbalancieren lassen. Wird nochmal lange dauern, aber dann sind alle wieder fit.
 Man kann das noch perfektionieren, indem man beispielsweise die Ladespannung in kleinen Schritten von 0,2 V bis zum Höchstwert von 53 V erhöht, immer wenn der Ladestrom unter 1 A fällt. Ich bin nicht sicher, ob das den Aufwand lohnt, auch weil man hinterher immer auch die Batterien sich untereinander balancen lassen muss, aber es gibt Leute, die schwören darauf. 
+
+Ich würde keine Batterie anfassen, ohne sie vorher per Konsolenkabel und BatteryView auf Fehler zu untersuchen. Siehe oben. Hinterher kann man hoffentlich sehen, dass die 15 Zellspannungen in einer Batterie ziemlich gleich sind (Unterschied unter 1%).
 
 Balancing bei voller Ladung ist übrigens von Pylontech vorgeschrieben, wenn man neue Batterien zu alten hinzufügen will. Dabei kann man das Laden aber im Gerät machen.
 Ich würde das auch immer machen, wenn die Batterien lange halbleer ausgeschaltet gestanden haben.
 
-Zusätzlich sollte man auf jeden Fall jetzt einmal die neueste Firmware aufspielen. Pylontech veröffentlich keine Beschreibungen, was in der Firmware geändert wurde, aber man kann davon ausgehen, dass sie in der Zwischenzeit Fehler bei den neuen Chips (2021) korrigiert haben.
-
 ## 3. Das Problem mit dem "Aufblähen"
 
-Vorab: Ich bin kein Batterieexperte. Nach mehrere Threads, Videos und Kommentaren ist dies meine Zusammenfassung. Falls hier ein echter Experte vorbeischaut, würde ich mich über Feedback freuen.
+_Ich bin kein Batterieexperte. Hier steht, was ich mir aus vielen Threads, Videos und Kommentaren zusammen gereimt habe. Falls hier ein echter Experte vorbeischaut, würde ich mich über Feedback freuen._
  
 Pylontech-Batterien haben intern ein passives Battery Management System (BMS). Das gleichmäßige Laden aller 15 Zellen pro Batterie wird dadurch geregelt, dass einzelne Zellen per zuschaltbarem Widerstand ausgebremst werden. Sobald die erste Zelle trotz Widerstand mehr als 3,6 V erreicht (Ladeschlußspannung), schaltet das BMS ab und die Batterie geht in den Overvoltage (OV) Modus = Ruhezustand. Kein Balancing mehr möglich, obwohl andere Zellen vielleicht erst bei 3,4 V sind.
 Die häufig verwendeten 53,2 V Ladespannung sind bei 15 Zellen in Reihe je 3,55 V. Das ist recht hoch und dicht an 3,6 V und so kann es passieren, dass die Batterie häufig mit OV-Modus abschaltet. So können die Ladungen der Zellen innerhalb einer Batterie bei längerem Gebrauch immer weiter auseinander driften. Das kann zu schweren Schäden führen, wenn einige Zellen immer wieder mit zu hoher Spannung geladen werden. Die Zellen können Gasblasen bilden und sich schließlich aufblähen. Das ist möglich, weil es Pouch-Zellen ohne druckfeste Hülle sind. 
