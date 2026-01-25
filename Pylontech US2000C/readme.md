@@ -5,7 +5,9 @@ Die Pylontechs gibt es schon lange (erste Versionen seit 2016) und sie sind gut 
 Die Batterieeinheiten werden übereinander in den Schrank geschoben und vorn mit vier Schrauben befestigt. Die Masterbatterie, meist die unterste, steuert die übrigen. Sie ist mit den ankommenden Batteriekabeln und dem Datenkabel mit dem WR verbunden. Bei Mischbestückung sollte sie die aus der neueste Modellreihe sein. 
 In den Hycube-Würfel passen theoretisch 7 Batterien.
 
-## 1. was tun, wenn die Batterie pfeift?
+## 1. Was tun, wenn die Batterie pfeift?
+Achtung: Da ist ersthaft etwas falsch. Wer hier mehrmals den Reset-Knopf drückt, riskiert mindestens seine Batterien.
+
 Pylontech schreibt: "Summer weisen auf einen fehlerhaften Zustand mit hohem Risiko hin.
 
 a) Polarität der Batteriekabel (Powerkabel vertauscht)
@@ -15,8 +17,6 @@ Lösung: Schalten Sie alle Batterien und Wechselrichter aus. Leistungsschalter a
 b) Interner Hardwarfehler.
 
 Lösung: Schalten Sie alle Batterien und Wechselrichter aus. Leistungsschalter abklemmen. Überprüfen Sie die Kabelverbindung und ziehen Sie alle Stromkabel ab. Überprüfen Sie, ob der Stromanschluss beschädigt ist oder nicht. Schalten Sie dann das einzelne Modul ein, ohne dass ein Kabel angeschlossen ist. Wenn immer noch ein Summer ertönt. Dann liegt ein Interner Fehler vor. Schalten Sie das Modul aus und wenden Sie sich an Ihren Händler."
-
-Das ist kein Spass. Es ist vielleicht ernsthaft etwas kaputt. Wer hier mehrmals den Reset-Knopf drückt, riskiert mindestens seine Batterien.
 
 ## 2. Pylontech-Batterien auslesen mit Konsolen-Kabel und BatteryView
 Zum Auslesen von Daten und zum Aktualisieren der Firmware benötigt man ein "Konsolenkabel", das die Batterien mit einem Laptop verbindet. Die Batterie US2000C hat einen RJ45-Anschluss, das ist ein normaler EtherCAT-Stecker. Alte US2000 haben einen RJ11-Anschluss. 
