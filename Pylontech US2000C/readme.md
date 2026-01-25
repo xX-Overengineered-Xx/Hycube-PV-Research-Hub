@@ -24,7 +24,7 @@ Man findet im Internet noch Anleitungen für den Eigenbau eines solchen Kabels m
 Ich verwende direkt ein Adapterkabel von RJ45-Stecker auf USB. Wichtig ist, dass das Kabel für das RS232-Protokoll ist und einen CH340-Chip hat. Ein Kabel mit FT32R-Chip von FTDI hat bei mir nicht funktioniert und ich vermute, ein Prolific PL2303GT funktioniert auch nicht. (Das modernere RS485-Protokoll wird an einem anderen Port für die Kommunikation der Batterien mit dem WR genutzt.)
 Die Kabel sind oft hellblau und kosten zwischen 8 und 13 €. Ein Meter ist zu kurz, wenn der Laptop auf dem Cube stehen soll. 
 
-Das Video "[Kabel zum Auslesen der Pylontech Akkus selber bauen oder kaufen? Hier ein kostengünstiger Vorschlag!](https://www.youtube.com/watch?v=tSIuWZ_N07c)" von *Solar-einfach-gemacht* zeigt beispielhaft ein Kabel und wie man den treiber unter Windows installiert.
+Das Video "[Kabel zum Auslesen der Pylontech Akkus selber bauen oder kaufen? Hier ein kostengünstiger Vorschlag!](https://www.youtube.com/watch?v=tSIuWZ_N07c)" von *Solar-einfach-gemacht* zeigt beispielhaft ein Kabel und wie man den richtigen Treiber unter Windows installiert.
 
 Das Programm BatteryView wurde wohl 2014 etwas 'schmutzig' programmiert, deshalb muss jeder Benutzer ein paar Kopfstände machen:
 1. Treiberchip im Kabel nur CH340
