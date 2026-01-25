@@ -6,7 +6,7 @@ Die Batterieeinheiten werden übereinander in den Schrank geschoben und vorn mit
 In den Hycube-Würfel passen theoretisch 7 Batterien.
 
 ## 1. Was tun, wenn die Batterie pfeift?
-Achtung: Da ist ersthaft etwas falsch. Wer hier mehrmals den Reset-Knopf drückt, riskiert mindestens seine Batterien.
+Achtung: Da ist ersthaft etwas falsch. Wer hier einfach ein paarmal den Reset-Knopf drückt, riskiert mindestens seine Batterien.
 
 Pylontech schreibt: "Summer weisen auf einen fehlerhaften Zustand mit hohem Risiko hin.
 
