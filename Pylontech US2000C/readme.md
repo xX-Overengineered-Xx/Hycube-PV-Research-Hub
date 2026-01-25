@@ -63,3 +63,6 @@ Wie bekommt man also Pylontech-Batterien kaputt?
 - Hohe Ladeschlussspannung, so dass die Batterie jeden Ladevorgang mit OV-Fehler beendet und das Balancing nicht beendet.
 - Einen Wechselrichter benutzen, der Überspannungswarnungen und unterschiedliche Zellspannungen ignoriert. 
 - Batterien nie voll geladen länger stehen lassen, um Self-Balancing zu verhindern.
+
+## 5. Hardware
+Wer einmal risikofrei in die Pylontech-Batterien hineinsehen will, wie das BMS aussieht, dem sei das [YouTube-Video von José Faria](https://www.youtube.com/watch?v=BYKeGvza1OM) empfohlen.
