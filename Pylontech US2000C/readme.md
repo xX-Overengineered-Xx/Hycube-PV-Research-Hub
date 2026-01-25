@@ -59,3 +59,7 @@ Das BMS kann die Zellen auch im Stillstand untereinander ausgleichen, aber nur w
 
 Eine gute Lösung wäre, die vom BMS gemessene maximale und minimale Zellspannung zu beobachten und bei mehr als 1% Unterschied (das sind nur 30 mV, die laut Pylontech okay sind) den Benutzer zu warnen. Oder gleich ein Balancing zu erzwingen. Das geht am Einfachsten, indem man alle Batterien (ggf. aus dem Netz) voll lädt und so lange stehen lässt, bis die Zellspannungen angeglichen sind. Das kann, wie gesagt, recht lange dauern. Das Ende des Selbst-Balancing erkennt man am Stromverbrauch, am Blinkmuster der LEDs und daran, dass sich die Zellspannungen angeglichen haben.
 
+Wie bekommt man also Pylontech-Batterien kaputt?
+- Hohe Ladeschlussspannung, so dass die Batterie jeden Ladevorgang mit OV-Fehler beendet und das Balancing nicht beendet.
+- Einen Wechselrichter benutzen, der Überspannungswarnungen und unterschiedliche Zellspannungen ignoriert. 
+- Batterien nie voll geladen länger stehen lassen, um Self-Balancing zu verhindern.
