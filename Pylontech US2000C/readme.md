@@ -5,7 +5,7 @@ Die Pylontechs gibt es schon lange (erste Versionen seit 2016) und sie sind gut 
 Die Batterieeinheiten werden übereinander in den Schrank geschoben und vorn mit vier Schrauben befestigt. Die Masterbatterie, meist die unterste, steuert die übrigen. Sie ist mit den ankommenden Batteriekabeln und dem Datenkabel mit dem WR verbunden. Bei Mischbestückung sollte sie die aus der neueste Modellreihe sein. 
 In den Hycube-Würfel passen theoretisch 7 Batterien.
 
-## 1. Pylontech-Akkus auslesen mit Konsolen-Kabel und BatteryView
+## 1. Pylontech-Batterien auslesen mit Konsolen-Kabel und BatteryView
 Zum Auslesen von Daten und zum Aktualisieren der Firmware benötigt man ein "Konsolenkabel", das die Batterien mit einem Laptop verbindet. Die Batterie US2000C hat einen RJ45-Anschluss, das ist ein normaler EtherCAT-Stecker. Alte US2000 haben einen RJ11-Anschluss. 
 Man findet im Internet noch Anleitungen für den Eigenbau eines solchen Kabels mit DB9-Stecker auf der anderen Seite. Auch die Anleitung von EFFEKTA.com zeigt solche Kabel. Nur ist der "Serielle Port" D-Sub-Anschluss an aktuellen Laptops schon lange nicht mehr vorhanden. Also bräuchte man zusätzlich noch einen Adapter von DB9 auf USB. Das geht einfacher:
 Ich verwende direkt ein Adapterkabel von RJ45-Stecker auf USB. Wichtig ist, dass das Kabel für das RS232-Protokoll ist und einen CH340-Chip hat. Ein Kabel mit FT32R-Chip von FTDI hat bei mir nicht funktioniert und ich vermute, ein Prolific PL2303GT funktioniert auch nicht. (Das modernere RS485-Protokoll wird an einem anderen Port für die Kommunikation der Batterien mit dem WR genutzt.)
@@ -22,11 +22,11 @@ In Windows den Geräte-Manger öffnen nach "Anschlüsse (COM & LPT)" suchen. Wen
 
 BatteryView (letzte vorhandene Version 3.0.36). https://www.photovoltaikforum.com/thread/201866-wo-finde-ich-die-pylontech-software-battery-view/?postID=4343567#post4343567
 
-## 2. Pylontech-Akkus Firmware updaten mit UpdateTool
+## 2. Pylontech-Batterien Firmware updaten mit UpdateTool
 Zusätzlich sollte man jetzt einmal die neueste Firmware aufspielen. Pylontech veröffentlich keine Beschreibungen, was in der Firmware geändert wurde, aber man kann davon ausgehen, dass sie in der Zwischenzeit Fehler bei den neuen Chips (2021) korrigiert haben. Es wird allgemein empfohlen, das UpdateTool (vorhandene Version v1.0.10_3) zum aktualisieren der Firmware zu benutzen, nicht BatteryView. 
 Während der Chipkrise wurden in US2000C andere Chips verbaut (erkennbar an E3 oder C3 in der Mitte der Seriennummer), die eine andere Firmware benötigen. Es wird deshalb empfohlen, die unentpackte ZIP-Datei zum Flashen zu benutzen. Das Tool sucht sich die richtige Datei darin selbst. Aktuelle [Firmware](https://www.effekta.com/download/firmwareupdate-fuer-us2000c-3000c/) und das Programm zum Aufspielen gibt es auf der Seite von EFFEKTA.com. 
 
-## 3. Batterie aufladen mit Labornetzteil
+## 3. Pylontech-Batterie aufladen mit Labornetzteil
 Wenn der Hycube-Controller aus ist, kann man dem Wechselrichter nicht den Befehl geben, die Batterien aus dem Netz zu laden. Man sollte dann erstmal herausfinden, warum der Controller nicht funktioniert und ob etwas kaputt ist.
 
 Pylontech schreibt in der Bedienungsanleitung: "2) Bei längerer Lagerung der Batterie muss diese alle sechs Monate aufgeladen werden und es muss sichergestellt sein, dass der Ladungszustand nicht weniger als 90% beträgt. 3) Nach vollständiger Entladung muss die Batterie innerhalb von 12 Stunden wieder aufgeladen werden."
@@ -43,7 +43,7 @@ Ich würde keine Batterie anfassen, ohne sie vorher per Konsolenkabel und Batter
 Balancing bei voller Ladung ist übrigens von Pylontech vorgeschrieben, wenn man neue Batterien zu alten hinzufügen will. Dabei kann man das Laden aber im Gerät machen.
 Ich würde das auch immer machen, wenn die Batterien lange halbleer ausgeschaltet gestanden haben.
 
-## 3. Das Problem mit dem "Aufblähen"
+## 4. Das Problem mit dem "Aufblähen"
 
 _Ich bin kein Batterieexperte. Hier steht, was ich mir aus vielen Threads, Videos und Kommentaren zusammen gereimt habe. Falls hier ein echter Experte vorbeischaut, würde ich mich über Feedback freuen._
  
