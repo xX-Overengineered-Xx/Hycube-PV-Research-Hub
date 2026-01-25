@@ -62,6 +62,8 @@ Ein Fachmann könnte jetzt im abgeschalteten Zustand eine Durchgangsprüfung zwi
 
 Falls trotzdem noch Batterien Fehler melden, liest man sie einzeln oder zusammen per Konsolenkabel und BatteryView aus. 
 
+Wenn der Wechselrichter und die Batterien einzeln ohne Fehlermeldung starten, der Controller aber nach mehreren Minuten (und Drücken des weissen Startknopfes) nicht, könnte es sein, dass der DC/DC-Wandler ("Netzteil") für die Hilfskomponenten in der Schublade defekt ist. Ein Fachmann könnte entweder 48 V DC am Eingang oder 24 V DC am Ausgang anschliessen, um zu sehen, ob der Controller startet. Der Controller nimmt dann direkt wieder Kontakt mit dem Internetserver auf.
+
 # Home Assistant
 Da der Hycube-Controller eine Weboberfläche bereitstellt (hycube.local) kann man über eine RESTful-Sensor eine json-Abfrage aller angezeigten Werte starten ([Link](https://community.simon42.com/t/daten-aus-http-abfrage-auswerten/60653)). Einstellen kann man damit aber nichts.
 
