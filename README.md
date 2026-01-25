@@ -19,6 +19,7 @@ Das Problem ist also nicht "Wir müssen ein Hycube-System reparieren, Hycube gib
 Der reine Materialpreis für einen vergleichbaren 'einfachen' Hydrid-Wechselrichter (5,x kWp, einphasig 230 V, LV-Batterieanschluss, möglichst von der Pylontech-Kompatibilitätsliste) liegt "so um die 1000 €".
 Man kann auch die Chance nutzen, mit einem besseren Wechselrichter aufzurüsten. Drei Phasen, unterbrechungfreier Ersatzstrom, alle PV-Panels an die Batterie angeschlossen...
 
+Falls die Anlage läuft: Hycube-PV-Systeme funktionieren auch ohne Internetserver von Hycube weiter. Bisher ist noch keine Funktion bekannt, die über die lokale Weboberfläche hycube.local nicht einstellbar ist. Außer natürlich der dynamische Stromtarif HYMAX, die aber wohl noch gar nicht vollständig gestartet war.
 *****
 
 Die Hycube-"Waschmaschine" eCompact neo besteht aus drei Teilen:
