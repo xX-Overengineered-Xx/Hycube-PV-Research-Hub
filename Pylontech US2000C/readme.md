@@ -5,7 +5,7 @@ Die Pylontechs gibt es schon lange (erste Versionen seit 2016) und sie sind gut 
 Die Batterieeinheiten werden übereinander in den Schrank geschoben und vorn mit vier Schrauben befestigt. Die Masterbatterie, meist die unterste, steuert die übrigen. Sie ist mit den ankommenden Batteriekabeln und dem Datenkabel mit dem WR verbunden. Bei Mischbestückung sollte sie die aus der neueste Modellreihe sein. 
 In den Hycube-Würfel passen theoretisch 7 Batterien.
 
-## Pylontech-Akkus auslesen mit Konsolen-Kabel und BatteryView
+## 1. Pylontech-Akkus auslesen mit Konsolen-Kabel und BatteryView
 Zum Auslesen von Daten und zum Aktualisieren der Firmware benötigt man ein "Konsolenkabel", das die Batterien mit einem Laptop verbindet. Die Batterie US2000C hat einen RJ45-Anschluss, das ist ein normaler EtherCAT-Stecker. Alte US2000 haben einen RJ11-Anschluss. 
 Man findet im Internet noch Anleitungen für den Eigenbau eines solchen Kabels mit DB9-Stecker auf der anderen Seite. Auch die Anleitung von EFFEKTA.com zeigt solche Kabel. Nur ist der "Serielle Port" D-Sub-Anschluss an aktuellen Laptops schon lange nicht mehr vorhanden. Also bräuchte man zusätzlich noch einen Adapter von DB9 auf USB. Das geht einfacher:
 Ich verwende direkt ein Adapterkabel von RJ45-Stecker auf USB. Wichtig ist, dass das Kabel für das RS232-Protokoll ist und einen CH340-Chip hat. Ein Kabel mit FT32R-Chip von FTDI hat bei mir nicht funktioniert und ich vermute, ein Prolific PL2303GT funktioniert auch nicht. (Das modernere RS485-Protokoll wird an einem anderen Port für die Kommunikation der Batterien mit dem WR genutzt.)
@@ -26,4 +26,29 @@ Gleich noch ein Hinweis: Es wird allgemein empfohlen, das UpdateTool (vorhandene
 Während der Chipkrise wurden in US2000C andere Chips verbaut (erkennbar an E3 oder C3 in der Mitte der Seriennummer), die eine andere Firmware benötigen. Es wird deshalb empfohlen, die unentpackte ZIP-Datei zum Flashen zu benutzen. Das Tool sucht sich die richtige Datei darin selbst. Aktuelle [Firmware](https://www.effekta.com/download/firmwareupdate-fuer-us2000c-3000c/) und das Programm zum Aufspielen gibt es auf der Seite von EFFEKTA.com. 
 
 Siehe auch: https://github.com/Frankkkkk/python-pylontech
+
+## 2. Laden mit Labornetzteil
+Wenn man es besonders gut machen will, kann man mit einem Labornetzteil jede Batterie einzeln mit maximal 5 A auf 52 V laden, dann werden die Zellen durch das Laden balanciert (YouTube [Steve&Julian](https://www.youtube.com/watch?v=4K3RAzwkvss)). Das dauert aber sehr lange. 
+Man kann das noch perfektionieren, indem man beispielsweise die Ladespannung in kleinen Schritten von 0,2 V bis zum Höchstwert von 53 V erhöht, immer wenn der Ladestrom unter 1 A fällt. Ich bin nicht sicher, ob das den Aufwand lohnt, auch weil man hinterher immer auch die Batterien sich untereinander balancen lassen muss, aber es gibt Leute, die schwören darauf. 
+
+Balancing bei voller Ladung ist übrigens von Pylontech vorgeschrieben, wenn man neue Batterien zu alten hinzufügen will. Dabei kann man das Laden aber im Gerät machen.
+Ich würde das auch immer machen, wenn die Batterien lange halbleer ausgeschaltet gestanden haben.
+
+Zusätzlich sollte man auf jeden Fall jetzt einmal die neueste Firmware aufspielen. Pylontech veröffentlich keine Beschreibungen, was in der Firmware geändert wurde, aber man kann davon ausgehen, dass sie in der Zwischenzeit Fehler bei den neuen Chips (2021) korrigiert haben.
+
+## 3. Das Problem mit dem "Aufblähen"
+
+Vorab: Ich bin kein Batterieexperte. Nach mehrere Threads, Videos und Kommentaren ist dies meine Zusammenfassung. Falls hier ein echter Experte vorbeischaut, würde ich mich über Feedback freuen.
+ 
+Pylontech-Batterien haben intern ein passives Battery Management System (BMS). Das gleichmäßige Laden aller 15 Zellen pro Batterie wird dadurch geregelt, dass einzelne Zellen per zuschaltbarem Widerstand ausgebremst werden. Sobald die erste Zelle trotz Widerstand mehr als 3,6 V erreicht (Ladeschlußspannung), schaltet das BMS ab und die Batterie geht in den Overvoltage (OV) Modus = Ruhezustand. Kein Balancing mehr möglich, obwohl andere Zellen vielleicht erst bei 3,4 V sind.
+Die häufig verwendeten 53,2 V Ladespannung sind bei 15 Zellen in Reihe je 3,55 V. Das ist recht hoch und dicht an 3,6 V und so kann es passieren, dass die Batterie häufig mit OV-Modus abschaltet. So können die Ladungen der Zellen innerhalb einer Batterie bei längerem Gebrauch immer weiter auseinander driften. Das kann zu schweren Schäden führen, wenn einige Zellen immer wieder mit zu hoher Spannung geladen werden. Die Zellen können Gasblasen bilden und sich schließlich aufblähen. Das ist möglich, weil es Pouch-Zellen ohne druckfeste Hülle sind. 
+
+Victron versucht das Problem zu vermeiden, indem sie die Ladespannung des Wechselrichters auf 52,4 V begrenzen. Dadurch verringert man deutlich das Risiko, dass die Batterie mit OV abschaltet und das Balancing ausfällt. Der Nachteil ist eine geringfügige Verringerung der Kapazität der Batterie, aber nur bei höchster Ladung.
+Das funktioniert allerdings nur, wenn der Wechselrichter seine Begrenzung auch einhält und nicht durch die per Bussystem gegebenen Grenzwerte des BMS überstimmt wird. Im BMS der Pylontech-Batterien stehen seit Jahren die gleichen höheren Werte.
+
+Laut Christoph Weidner (deyeguru, Kommentar [hier](https://www.youtube.com/watch?v=xAQWjpebymQ)) hatten die von ihm ausgewerteten aufgeblähten Akkus von Beginn an mit HV und OV Fehlern zu kämpfen. HV-Fehler (High Voltage) können alle möglichen Fehler sein, unter anderem fehlerhafte Kommunikation zwischen BMS und Wechselrichter aber auch dass Über- oder Unterspannungsschutz ausgelöst wurden. Wenn man die Fehlermeldungen im Betrieb auswerten könnte, hätte man eine gute Vorwarnung.
+
+Das BMS kann die Zellen auch im Stillstand untereinander ausgleichen, aber nur wenn sich die Zellen im flachen Bereich der Ladekurve, also im recht hohen Ladezustand (SoC, State of Charge) größer als 92% befinden. Außerdem kann der Regler nur 100 mA (?) pro Zelle übertragen, also dauert das ewig. Wenn die Batterien also nicht längere Zeit über 92% SoC stehen, kann das Balancing schlecht sein.
+
+Eine gute Lösung wäre, die vom BMS gemessene maximale und minimale Zellspannung zu beobachten und bei mehr als 1% Unterschied (das sind nur 30 mV, die laut Pylontech okay sind) den Benutzer zu warnen. Oder gleich ein Balancing zu erzwingen. Das geht am Einfachsten, indem man alle Batterien (ggf. aus dem Netz) voll lädt und so lange stehen lässt, bis die Zellspannungen angeglichen sind. Das kann, wie gesagt, recht lange dauern. Das Ende des Selbst-Balancing erkennt man am Stromverbrauch, am Blinkmuster der LEDs und daran, dass sich die Zellspannungen angeglichen haben.
 
