@@ -27,7 +27,7 @@ Falls die Anlage läuft: Hycube-PV-Systeme funktionieren auch ohne Internetserve
 - Regelmäßig (mindestens alle 6 Monate) die alle Zellspannungen der Pylontech-Batterien überprüfen und die ggf. manuell balancieren. (Batterien voll laden und zum Selbstausgleich lange stehen lassen, bis die LEDS nicht mehr blinken.)
 - Schon mal überlegen, wie man vorgehen möchte, wenn der Wechselrichter irgendwann ausfällt. Also welchen Wechselrichter man kaufen möchte, um danach Hycube-frei zu sein. Ein Plan und sein Preis wirken entspannend.
 - Ansonsten: "Alle Anlagendaten bleiben im lokalen Speichersystem erhalten (auf der SD-Karte). Die Funktion Ihrer Anlage ist durch das Abschalten des Servers nicht beeinträchtigt. Lokaler Zugriff bleibt dauerhaft und kostenfrei möglich." Zugriff über einen Browser im Heimnetzwerk: http://hycube.local (klappt selten nicht, notfalls über die IP-Adresse der Anlage, zu finden im Router). Für den Zugriff aus dem Internet muss man z.B. einen VPN-Zugang einrichten.
-- 
+
 ## Backup der SD-Karte machen
 Unter Windows mit dem Programm Win32 Disk Imager. SD-Karte ins Kartenlesegerät stecken, den Laufwerksbuchstaben der Karte als Quelle wählen, Dateiname für Ziel auf der Festplatte eingeben. Die erzeugte Image-Datei ist eine 1:1-Kopie der 16 GB großen SD-Karte, hat also auch jede Menge Leerraum. Man kann sie auf etwa 660 MB komprimieren, um Speicherplatz zu sparen.
 
