@@ -20,7 +20,18 @@ Der reine Materialpreis für einen vergleichbaren 'einfachen' Hydrid-Wechselrich
 Man kann auch die Chance nutzen, mit einem besseren Wechselrichter aufzurüsten. Drei Phasen, unterbrechungfreier Ersatzstrom, alle PV-Panels an die Batterie angeschlossen...
 
 Falls die Anlage läuft: Hycube-PV-Systeme funktionieren auch ohne Internetserver von Hycube weiter. Bisher ist noch keine Funktion bekannt, die über die lokale Weboberfläche hycube.local nicht einstellbar ist. Außer natürlich der dynamische Stromtarif HYMAX, die aber wohl noch gar nicht vollständig gestartet war.
-*****
+
+# Mein System läuft, was sollte ich jetzt tun?
+- Backup der SD-Karte im Controller machen. Auf die SD-Karte werden regelmäßig alle Erzeugungs- und Verbrauchsdaten geschrieben. SD-Karten überleben eine begrenzte Anzahl Schreibvorgänge, danach geht sie kaputt. Ohne Hycube kann der Inhalt der SD-Karte nicht wieder hergestellt werden. Der Controller funktioniert nicht mehr, weil er kein Betriebssystem hat (das läßt sich wohl lösen) aber die historischen Erzeugung- und Verbrauchsdaten sind weg. Die SD-Karte ist eine echte Archillesferse des Systems. Manchmal ist eine defekte Karte noch lesbar, nur nicht beschreibbar (um die Daten zu schützen), aber darauf sollte man sich nicht verlassen. 
+- Fehlerspeicher der Pylontech-Batterien auslesen und Firmware aktualisieren. Bei gefundenen Fehlern die Ladespannung im Wechselrichter auf 52 V heruntersetzen. Sollte man sicherheitshalber ohnehin machen.
+- Regelmäßig (mindestens alle 6 Monate) die alle Zellspannungen der Pylontech-Batterien überprüfen und die ggf. manuell balancieren. (Batterien voll laden und zum Selbstausgleich lange stehen lassen, bis die LEDS nicht mehr blinken.)
+- Schon mal überlegen, weie man vorgehen möchte, wenn der Wechselrichter ausfällt. Also welchen WRE man kaufen möchte um danach Hycube-frei zu sein.
+
+## Backup der SD-Karte machen
+Unter Windows mit dem Programm Win32 Disk Imager. SD-Karte ins Kartenlesegerät stecken, den Laufwerksbuchstaben der Karte als Quelle wählen, Dateiname für Ziel auf der Festplatte eingeben. Die erzeugte Image-Datei ist eine 1:1-Kopie der 16 GB großen SD-Karte, hat also auch jede Menge Leerraum. Man kann sie auf etwa 660 MB komprimieren, um Speicherplatz zu sparen.
+
+Wenn (*nicht* falls) der Originalkarte etwas passiert, kann man das Image auf jede beliebige Karte aufspielen und den Controller weiter betreiben. Die Daten seit dem letzten Backup sind allerdings weg.
+***
 
 Die Hycube-"Waschmaschine" eCompact neo besteht aus drei Teilen:
 
