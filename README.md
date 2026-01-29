@@ -31,7 +31,7 @@ Falls die Anlage läuft: Hycube-PV-Systeme funktionieren auch ohne Internetserve
 ## Backup der SD-Karte machen
 Unter Windows mit dem Programm Win32 Disk Imager. SD-Karte ins Kartenlesegerät stecken, den Laufwerksbuchstaben der Karte als Quelle wählen, Dateiname für Ziel auf der Festplatte eingeben. Die erzeugte Image-Datei ist eine 1:1-Kopie der 16 GB großen SD-Karte, hat also auch jede Menge Leerraum. Man kann sie auf etwa 660 MB komprimieren, um Speicherplatz zu sparen.
 
-Wenn (*nicht* falls) der Originalkarte etwas passiert, kann man das Image auf jede beliebige Karte aufspielen und den Controller weiter betreiben. Die Daten seit dem letzten Backup sind allerdings weg.
+Wenn (nicht *falls*) der Originalkarte etwas passiert, kann man das Image auf jede beliebige Karte aufspielen und den Controller weiter betreiben. Die Daten seit dem letzten Backup sind allerdings weg.
 ***
 
 Die Hycube-"Waschmaschine" eCompact neo besteht aus drei Teilen:
