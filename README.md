@@ -8,6 +8,7 @@ Falls jemand sein Copyright verletzt sieht, sagt bitte einfach Bescheid, dann re
 Für alle Anleitungen gilt: Wenn ihr komplette Elektro-Muggel seid, fragt jemanden, der sich wirklich damit auskennt und lasst den das machen. Also zum Beispiel einen Elektriker, nicht ChatGPT.
 
 Ich fange mit dem "e.Compact neo" an, weil ich solch ein System besitze.
+![](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/blob/main/hycube%20e_Compact.jpg)
 
 # Zusammenfassung, ganz wichtig
 Eine "Hycube-Anlage e.Compact neo" ist aus zugekauften Komponenten zusammengestellt. Alle Komponenten, außer dem Wechselrichter, sind einzeln frei nachkaufbar. Sogar der Minicomputer des Controllers. Hycube-Controller und Wechselrichter bilden zusammen die "Hycube-Anlage".
