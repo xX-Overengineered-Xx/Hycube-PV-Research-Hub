@@ -5,7 +5,7 @@ Bei Videos und Anleitungen darauf achten, dass die nicht für UC3000 oder UC5000
 
 Die Batterien werden einfach übereinander in den Schrank geschoben und vorn mit vier Schrauben befestigt. Jede Batterie hat zwei verbundene Pluspole (rot) und zwei verbundene Minuspole (schwarz). Die erste Batterie wird an ein rotes und ein schwarzes Kabel vom Wechselrichter angeschlossen. Dann kommen die kurzen Kabel jeweils zur nächsten Batterie. Es sind alle Pluspole und alle Minuspole miteinander verbunden, die Batterien also parallel geschaltet. Deshalb haben alle die gleiche Spannung von nominell 48 Volt.
 Bei der Datenverkabelung läuft es so ähnlich. Eine Batterie ist die Masterbatterie, sie steuert die übrigen. Sie ist mit einem Datenkabel im unteren mittleren Anschluss "B/RS485" mit dem WR verbunden. Bei Mischbestückung sollte sie die aus der neueste Modellreihe sein. Dann kommen die kurzen schwarzen Datenkabel, jeweils vom "Linkport 1" zum "Linkport 0" der nächsten Batterie.  
-!(https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/blob/main/Pylontech%20US2000C/4x%20Pylontech.jpg)
+![Foto 4x Pylontech](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/blob/main/Pylontech%20US2000C/4x%20Pylontech.jpg)
 
 ## 1. Was tun, wenn die Batterie pfeift?
 Achtung: Da ist ersthaft etwas falsch. Wer hier einfach ein paarmal den Reset-Knopf drückt, riskiert mindestens seine Batterien.
