@@ -1,5 +1,7 @@
 ## Ersatz für CBi-Schalter
 
+Die Fernbetätigungseinheit (RAU) ist seitlich an einen Leistungsschalter angeflanscht. Sie ermöglicht das ferngesteuerte Trennen zund Schliessen des Plus-Kabels zwischen Wechselrichter und Batterie. 
+
 ### Überhaupt nötig?
 Pylontech schreibt für ihre Batterien kein weiteres Sicherungselement vor. Nach "Stand der Technik" ist trotzdem ein Leitungsschutz nötig. Die Gefahr geht von der Batterie aus, die bei Kurzschluss sehr höhe Ströme erzeugen kann (einige tausend Ampere). Wenn am Wechselrichter ein Kurzschluss auftritt und die interne Absicherung der Batterie (400 A) versagt, könnten die Kabel zum Wechselrichter schmelzen oder abreißen und Schäden verursachen. Es wird also ein Sicherungselement benötig, der bei zu hohen Strömen die Plusleitung zwischen Batterien und WR trennt.
 
