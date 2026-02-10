@@ -7,7 +7,7 @@ Links auf der Oberseite ist ein Slot für eine microSD-Karte. Auf der Karte ist 
 Weitere Komponenten
 Hinten ganz links zwei Verteilerblöcke Contaclip 27202.0 für Plus und Minus 48 V.
 
-Links davor fernbedienbarer Leistungsschalter (Remote Actuator Unit = RAU) von CBi. Mehr dazu im eigenen Verzeichnis.
+Links davor fernbedienbarer Leistungsschalter (Remote Actuator Unit = RAU) von CBi. Mehr dazu im [eigenen Verzeichnis](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/blob/main/Hycube%20Controller-Schublade/CBi%20RAU/).
 
 Hinten links DC/DC-Wandler Traco Power TCL 060-124 DC (18-75 V auf 24 V), 
 davor USB-Hub 1 auf 4,
