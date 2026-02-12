@@ -11,7 +11,7 @@ Eingebaut ist der Schalter ganz links in der 'Schublade'.
 <img src="https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/blob/main/Hycube%20Controller-Schublade/CBi%20RAU/CBi%20eingebaut.jpg" width="40%">
 
 Für dieses Bauteil gibt es aktuell keine Einkaufsquelle und keinen Ersatz von einem anderen Hersteller.
-So richtig klar ist mir aber nicht, warum man die Leitung zur Batterie noch extra trennen muss. Ich vermute, Hycube hat das Teil eingebaut, "weil des das konnte" und um wirklich alle möglichen anderen Batterien verbaut zu können.  
+So richtig verstehe ich noch nicht, warum man die Leitung zur Batterie noch extra trennen muss. Ich vermute, Hycube hat das Teil eingebaut, "weil es das konnte" und um wirklich alle möglichen anderen Batterien verbaut zu können.  
 
 ### Überhaupt nötig?
 Pylontech schreibt "Zum Schutz des Systems sollte zwischen der Batteriebank und dem Wechselrichter ein Leitungsschutzschalter zwischengeschaltet werden." (Handbuch US2000C v1.4, Seite 35). Die Gefahr geht von der Batterie aus, die bei Kurzschluss sehr höhe Ströme erzeugen kann (einige tausend Ampere). Wenn am Wechselrichter ein Kurzschluss auftritt und die interne Absicherung der Batterie (400 A) versagt, könnten die Kabel zum Wechselrichter schmelzen oder abreißen und Schäden verursachen. Es wird also ein Sicherungselement benötig, der bei zu hohen Strömen die Plusleitung zwischen Batterien und WR trennt.
