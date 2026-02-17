@@ -16,4 +16,6 @@ Ob der WR von Sermatec für Hycube mit geänderter Firmware versehen wurde oder 
 
 Ersatz: Sermatec baut inzwischen keine Wechselrichter mehr für den Consumer-Bereich, deshalb hat Hycube bei den Tri.aktiv-Geräten auf IMEON gewechselt. Das wäre eine Option, falls ein Sermatec kaputt geht. Wichtig sollte sein, dass ein neuer WR auf der Kompatibilitätsliste von Pylontech steht, damit er die Batterien direkt ansprechen kann, falls der Hycube-Controller mal kaputt geht. Victron macht viel mit Pylontech. Falls man das System mit eigenem statt Hycube-Controller betreiben will/muss ist die Kompatibilität egal, weil der Controller zwischen WR und Batterie kommunizieren kann.
 
+Falls jemand mal reinsehen möchte: [Innenansicht](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/tree/main/Sermatec%20SMT-5K-TL-LV/Innenansicht)
+
 Siehe auch: https://github.com/sermatec-opensource
