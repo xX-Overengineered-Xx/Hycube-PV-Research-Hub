@@ -7,7 +7,7 @@ Hier sieht man den weissen Wechselrichter ohne Batterien noch ganz gut:
 
 Der WR kann etwa 5 kW, deshalb ist die Entladeleistung selbst bei den großen Batteriesätzen auf 4,8 kW begrenzt.
 
-Der Wechselrichter baut ein eigenes WLAN mit dem Namen "ST000921…" mit kurzer Reichweite auf. Zum Auslesen einiger Daten kann man auf einem Mobiltelefon die Sermatec-App installieren und sich mit diesem WLAN verbinden (Passwort ist gsstes123456). Man muss aber ziemlich dicht daneben stehen. Wer mehr Reichweite braucht, schliesst an den Antennenanschluss (SMA) eine WLAN-Antenne an. Gegen Sicherheitsbedenken hilft eine Verschlusskappe aus Metall.
+Der Wechselrichter baut ein eigenes WLAN mit dem Namen "ST000921…" mit kurzer Reichweite auf. Zum Auslesen einiger Daten kann man auf einem Mobiltelefon die Sermatec-App installieren und sich mit diesem WLAN verbinden (Passwort ist gsstes123456). Man muss aber ziemlich dicht daneben stehen. Wer mehr Reichweite braucht, schliesst an den Antennenanschluss (SMA) eine WLAN-Antenne an. Gegen Sicherheitsbedenken hilft eine abschirmende Verschlusskappe aus Metall.
 
 Nach dem Start der App nicht anmelden, sondern ganz unten "lokal verwenden" (oder so). Die App zeigt auch Fehlermeldungen, falls es welche gibt. 
 Die App erlaubt auch Cloud-Zugriff. Vielleicht gibt es hier die Möglichkeit, direkt über Sermatec irgendwie zu gehen und Zugriff auf den Wechselrichter von unterwegs zu erhalten...
