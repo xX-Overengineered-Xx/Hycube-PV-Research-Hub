@@ -10,7 +10,7 @@ Eingebaut ist der Schalter ganz links in der 'Schublade'.
 
 <img src="https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/blob/main/Hycube%20Controller-Schublade/CBi%20RAU/CBi%20eingebaut.jpg" width="40%">
 
-Für dieses Bauteil gibt es aktuell keine Einkaufsquelle und keinen Ersatz von einem anderen Hersteller.
+CBi International hat auf Anfrage mitgeteilt, dass sie nicht an Privatleute liefern, sondern nur an Großhändler oder die Industrie. Ihr Großhändler für Europa ist [emcomp.se](https://www.emcomp.se/products/cbi-circuit-breakers/cbi-front-mounted-rear-connected-mcbs-cbes/rau-remote-controlled-mcb-05-300a-for-ac-and-dc-applications/). Man könnte versuchen, dort eine Sammelbestellung zu organisieren, aber ich brauche das Teil nicht. 
 So richtig verstehe ich noch nicht, warum man die Leitung zur Batterie noch extra trennen muss. Ich vermute, Hycube hat das Teil eingebaut, "weil es das konnte" und um wirklich alle möglichen anderen Batterien verbaut zu können.  
 
 ### Überhaupt nötig?
