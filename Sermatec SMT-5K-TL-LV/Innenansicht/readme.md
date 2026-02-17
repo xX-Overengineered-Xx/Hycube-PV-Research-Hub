@@ -1,3 +1,8 @@
+<p align="center"><img src="https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/blob/main/Sermatec%20SMT-5K-TL-LV/Innenansicht/Fehlermeldungen%20WR.JPG" align=center width="30%"></p>
+
+Fehlermeldungen in der Sermatec-App. 'Battery Undervoltage' passiert, wenn die Batterie getrennt wurde, obwohl sie angeschlossen sein soll und per Bus Daten liefert. 'Meter Warning' ist normal, wenn kein Strommessgerät angeschlossen ist. 'Bus Insulation Resistance Fault' ist schlecht, weil nicht die Isolierung der PV-Strings gemeint ist, sondern die DC-Verbindung zur Batterie.
+<br>
+<br>
 Mein Wechselrichter hatte einen Durchgang zwischen Batterie Plus und Minus, deshalb haben wir ihn aufgemacht. 
 Die Hoffnung war, dass es nur ein kurz geschlossener Pufferkondensator war.
 
@@ -13,7 +18,7 @@ Auf der Unterseite dann doch nicht.
 
 <img src="https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/blob/main/Sermatec%20SMT-5K-TL-LV/Innenansicht/Platine.jpg">
 
-Die Spritzer sind flüssige Beinchen. Es fehlen ein paar kleine Komponnten.
+Die Spritzer sind flüssige Beinchen. Es fehlen ein paar kleine Komponenten.
 
 <img src="https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/blob/main/Sermatec%20SMT-5K-TL-LV/Innenansicht/Schaden.jpg">
 
