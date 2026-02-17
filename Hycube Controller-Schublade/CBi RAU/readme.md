@@ -10,11 +10,12 @@ Eingebaut ist der Schalter ganz links in der 'Schublade'.
 
 <img src="https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/blob/main/Hycube%20Controller-Schublade/CBi%20RAU/CBi%20eingebaut.jpg" width="40%">
 
-CBi International hat auf Anfrage mitgeteilt, dass sie nicht an Privatleute liefern, sondern nur an Großhändler oder die Industrie. Ihr Großhändler für Europa ist [emcomp.se](https://www.emcomp.se/products/cbi-circuit-breakers/cbi-front-mounted-rear-connected-mcbs-cbes/rau-remote-controlled-mcb-05-300a-for-ac-and-dc-applications/). Man könnte versuchen, dort eine Sammelbestellung zu organisieren, aber ich brauche das Teil nicht. 
-So richtig verstehe ich noch nicht, warum man die Leitung zur Batterie noch extra trennen muss. Ich vermute, Hycube hat das Teil eingebaut, "weil es das konnte" und um wirklich alle möglichen anderen Batterien verbaut zu können.  
+CBi International hat auf Anfrage mitgeteilt, dass sie nicht an Privatleute liefern, sondern nur an Großhändler oder die Industrie. Ihr Großhändler für Europa ist [emcomp.se](https://www.emcomp.se/products/cbi-circuit-breakers/cbi-front-mounted-rear-connected-mcbs-cbes/rau-remote-controlled-mcb-05-300a-for-ac-and-dc-applications/). Man könnte versuchen, dort eine Sammelbestellung zu organisieren, aber - siehe nächster Abschnitt. 
 
 ### Überhaupt nötig?
-Pylontech schreibt "Zum Schutz des Systems sollte zwischen der Batteriebank und dem Wechselrichter ein Leitungsschutzschalter zwischengeschaltet werden." (Handbuch US2000C v1.4, Seite 35). Die Gefahr geht von der Batterie aus, die bei Kurzschluss sehr hohe Ströme erzeugen kann (einige tausend Ampere). Wenn am Wechselrichter ein Kurzschluss auftritt und die interne Absicherung der Batterie (400 A) versagt, könnten die Kabel zum Wechselrichter schmelzen oder abreißen und Schäden verursachen. Es wird also ein Sicherungselement benötig, das bei zu hohen Strömen die Plusleitung zwischen Batterien und WR trennt.
+So richtig verstehe ich noch nicht, warum man die Leitung zur Batterie noch extra trennen muss. Ich vermute, Hycube hat das Teil eingebaut, "weil es das konnte" und um wirklich alle möglichen anderen Batterien verbaut zu können.  
+
+Pylontech schreibt "Zum Schutz des Systems sollte zwischen der Batteriebank und dem Wechselrichter ein Leitungsschutzschalter zwischengeschaltet werden." (Handbuch US2000C v1.4, Seite 35). Die Gefahr geht von der Batterie aus, die bei Kurzschluss sehr hohe Ströme erzeugen kann (einige tausend Ampere). Wenn am Wechselrichter ein Kurzschluss auftritt und die interne Absicherung der Batterie (400 A) versagt, _könnten_ die Kabel zum Wechselrichter schmelzen oder abreißen und Schäden verursachen. Es wird also ein Sicherungselement benötig, das bei zu hohen Strömen die Plusleitung zwischen Batterien und WR trennt.
 
 ### Sicherungsautomat oder Sicherung?
 Die Schaltfunktion (u.a. im Touchscreen des Hycube-Controllers) entfällt auf jeden Fall, da es keinen vergleichbaren fernbedienbaren Leistungsschalter am Markt gibt. Man kann als Ersatz einen Sicherungsautomaten einbauen oder eine Sicherung. 
