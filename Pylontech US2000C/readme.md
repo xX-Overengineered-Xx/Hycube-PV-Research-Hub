@@ -29,7 +29,7 @@ Die Kabel sind oft hellblau und kosten zwischen 8 und 13 €. Ein Meter ist zu k
 Das Video "[Kabel zum Auslesen der Pylontech Akkus selber bauen oder kaufen? Hier ein kostengünstiger Vorschlag!](https://www.youtube.com/watch?v=tSIuWZ_N07c)" von *Solar-einfach-gemacht* zeigt beispielhaft ein Kabel und wie man den richtigen Treiber unter Windows installiert.
 
 Das Programm BatteryView wurde wohl 2014 etwas 'schmutzig' programmiert, deshalb muss jeder Benutzer ein paar Kopfstände machen:
-1. Treiberchip im Kabel nur CH340
+1. Treiberchip im Kabel nur CH340. FT-Chips funktionieren nicht immer.
 2. Windows COM-Port-Treiber nur Version 3.7
 3. Windows muss auf 'Sprache und Region', 'Regionales Format' auf 'Englisch (Vereintes Königreich) oder Englisch (Vereinigte Staaten)' stehen, damit Komma und Dezimalpunkt richtig übertragen werden. Sonst gibt es die Fehlermeldung "EOF in Header".
 
