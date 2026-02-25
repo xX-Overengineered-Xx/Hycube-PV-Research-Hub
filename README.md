@@ -13,7 +13,7 @@ Ich fange mit dem "e.Compact neo" an, weil ich solch ein System besitze.
 # Zusammenfassung, ganz wichtig
 Eine "Hycube-Anlage e.Compact neo" ist aus zugekauften Komponenten zusammengestellt. Alle Komponenten, außer dem Wechselrichter, sind einzeln frei nachkaufbar. Sogar der Minicomputer des Controllers. Hycube-Controller und Wechselrichter bilden zusammen die "Hycube-Anlage".
 
-Falls der Wechselrichter kaputtgeht, ist es sofort kein Hycube-System mehr. Der Hycube-Controller arbeitet nicht mit anderen Wechselrichtern, kann also weg. Mit dem Wechselrichter eines anderen Herstellers kauft man praktischerweise auch einen passenden Controller von diesem Hersteller.
+<ins><b>Falls der Wechselrichter kaputtgeht, ist es sofort kein Hycube-System mehr.</b></ins> Der Hycube-Controller arbeitet nicht mit anderen Wechselrichtern, kann also weg. Mit dem Wechselrichter eines anderen Herstellers kauft man praktischerweise auch einen passenden Controller von diesem Hersteller.
 
 Das Problem ist also nicht "Wir müssen ein Hycube-System reparieren, Hycube gibt es nicht mehr und wir haben keine Ahnung", sondern "Wir kaufen einen neuen Wechselrichter und schließen unsere Batterien und PV-Panels an". Das hört sich auch für einen örtlichen Installateur deutlich netter an.
 
