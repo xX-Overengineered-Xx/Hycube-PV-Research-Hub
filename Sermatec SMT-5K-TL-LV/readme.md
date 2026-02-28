@@ -14,8 +14,8 @@ Die App erlaubt auch Cloud-Zugriff. Vielleicht gibt es hier die Möglichkeit, di
 
 Ob der WR von Sermatec für Hycube mit geänderter Firmware versehen wurde oder man intern die direkte Batterienutzung freischalten kann, ist aktuell nicht klar. Im ersten Fall wäre eine originale Firmware von Sermatec eine Lösung. Die hat bisher noch niemand gespendet.
 
-Ersatz: Sermatec baut inzwischen keine Wechselrichter mehr für den Consumer-Bereich, deshalb hat Hycube bei den Tri.aktiv-Geräten auf IMEON gewechselt. Allerdings sind solch kleine (5 kW) Hybridwechselrichter vergleichsweise teuer. Man sollte überlegen, ob man nicht einen so großen WR beschafft, dass er alle Panels bedienen kann. Damit entfällt der zweite externe WR und im Winter steht die gesamte PV-Leistung der Batterie zur Verfügung.
-Wichtig sollte sein, dass ein neuer WR auf der Kompatibilitätsliste von Pylontech steht, damit er die Batterien direkt ansprechen kann, falls der Hycube-Controller mal kaputt geht. Victron macht viel mit Pylontech. Falls man das System mit eigenem statt Hycube-Controller betreiben will/muss ist die Kompatibilität egal, weil der Controller zwischen WR und Batterie kommunizieren kann.
+Ersatz: Sermatec baut inzwischen keine Wechselrichter mehr für den Consumer-Bereich, deshalb hat Hycube bei den Tri.aktiv-Geräten auf IMEON gewechselt. Allerdings sind solch kleine (5 kW) Hybridwechselrichter vergleichsweise teuer. Man sollte überlegen, ob man nicht einen so großen WR beschafft, dass er alle PV-Panels bedienen kann. Damit entfällt der zweite externe WR und im Winter steht die gesamte PV-Leistung der Batterie zur Verfügung.
+Wichtig sollte sein, dass ein neuer WR auf der Kompatibilitätsliste von Pylontech steht, damit er die Batterien direkt ansprechen kann. Falls man das System mit eigenem statt Hycube-Controller betreiben will/muss ist die Kompatibilität egal, weil der Controller zwischen WR und Batterie kommunizieren kann.
 
 Falls jemand mal reinsehen möchte: [Innenansicht](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/tree/main/Sermatec%20SMT-5K-TL-LV/Innenansicht)
 
