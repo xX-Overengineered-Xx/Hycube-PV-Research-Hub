@@ -60,8 +60,8 @@ Ersatzstrom für das ganze Haus ist etwas aufwändiger. Es wurde ein automatisch
 
 # Hycube-Besonderheiten, Fehler
 Soweit ich es verstehe, ist die Einschaltreihenfolge so, dass zuerst der WR gestartet wird, dann die Batterien, dann der Controller. Das kann bis zu 2 Minuten dauern.
-Leider scheint es so zu sein, dass ein Fehler am WR oder einer Batterie dazu führt, dass der Controller nicht mehr hochfährt, da er aus den 48 V DC-Kabeln zwischen Wechselrichter und Batterie versorgt wird. Das kann ein Hardwarefehler sein, den der WR feststellt oder der Tiefentladeschutz der Batterien. In diesem Fall muss man die Fehler dieses Gerätes zuerst beheben, damit irgendwann der Controller wieder läuft. Zu Testzwecken kann man das Traco-Netzteil auch Fremdversorgen, um den Controller unabhängig vom System zu starten.
-Stichwort Sermatec-App, Konsolenkabel. 
+Leider scheint es so zu sein, dass ein Fehler am WR oder einer Batterie dazu führt, dass der Controller nicht mehr hochfährt, da er aus den 48 V DC-Kabeln zwischen Wechselrichter und Batterie versorgt wird. Das kann ein Hardwarefehler sein, den der WR feststellt oder der Tiefentladeschutz der Batterien. In dem Fall muss man die Fehler dieses Gerätes zuerst beheben, damit der Controller wieder läuft. Zu Testzwecken kann man das Traco-'Netzteil' auch mit 18 bis 75 V DC fremdversorgen, um den Controller unabhängig vom System zu starten. Falls das nicht klappt könnte das Traco defekt sein, dann die Ausgangsseite mit 24 V DC fremdversorgen. 
+Danach weiter mit Sermatec-App und Konsolenkabel. 
 
 # Einfachste Fehlersuche
 Zuerst die externe Sicherung in einem Sicherungsschrank kontrollieren.
