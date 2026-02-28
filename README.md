@@ -23,16 +23,18 @@ Man kann auch die Chance nutzen, mit einem besseren Wechselrichter aufzurüsten.
 Falls die Anlage läuft: Hycube-PV-Systeme funktionieren auch ohne Internetserver von Hycube weiter. Bisher ist noch keine Funktion bekannt, die über die lokale Weboberfläche hycube.local nicht einstellbar ist. Außer natürlich der dynamische Stromtarif HYMAX, die aber wohl noch gar nicht vollständig gestartet war.
 
 # Mein System läuft, was sollte ich jetzt tun?
-- Backup der SD-Karte im Controller machen. Auf die SD-Karte werden regelmäßig alle Erzeugungs- und Verbrauchsdaten geschrieben. SD-Karten überleben eine begrenzte Anzahl Schreibvorgänge, danach geht sie kaputt. Ohne Hycube kann der Inhalt der SD-Karte nicht wieder hergestellt werden. Der Controller funktioniert nicht mehr, weil er kein Betriebssystem hat (das läßt sich wohl lösen) aber die historischen Erzeugung- und Verbrauchsdaten sind weg. Die SD-Karte ist eine echte Archillesferse des Systems. Manchmal ist eine defekte Karte noch lesbar, nur nicht beschreibbar (um die Daten zu schützen), aber darauf sollte man sich nicht verlassen. 
+- Backup der SD-Karte im Controller machen. Auf die SD-Karte werden regelmäßig alle Erzeugungs- und Verbrauchsdaten geschrieben. SD-Karten überleben eine begrenzte Anzahl Schreibvorgänge, danach geht sie kaputt. Ohne Hycube kann der Inhalt der SD-Karte nicht wieder hergestellt werden. Der Controller funktioniert nicht mehr, weil er kein Betriebssystem hat (das läßt sich wohl lösen) aber die historischen Erzeugung- und Verbrauchsdaten sind weg. Die SD-Karte ist eine echte Archillesferse des Systems. Manchmal ist eine defekte Karte noch lesbar, nur nicht beschreibbar (um die Daten zu schützen), aber darauf sollte man sich nicht verlassen. Ich empfehle den Einsatz einer neueren High Endurance-Karte, die deutlich länger hält.
 - Bei Bedarf: Fehlerspeicher der Pylontech-Batterien auslesen und Firmware aktualisieren. Bei gefundenen Fehlern die Ladespannung im Wechselrichter auf 52 V heruntersetzen.
 - Bei Bedarf: Regelmäßig (mindestens alle 6 Monate) alle Zellspannungen der Pylontech-Batterien überprüfen und sie ggf. manuell balancieren. (Batterien voll laden und zum Selbstausgleich lange stehen lassen, bis die LEDS nicht mehr blinken.)
 - Schon mal überlegen, wie man vorgehen möchte, wenn der Wechselrichter irgendwann ausfällt. Also welchen Wechselrichter man kaufen möchte, um danach Hycube-frei zu sein. Ein Plan und sein Preis wirken entspannend.
 - Ansonsten: "Alle Anlagendaten bleiben im lokalen Speichersystem erhalten (auf der SD-Karte). Die Funktion Ihrer Anlage ist durch das Abschalten des Servers nicht beeinträchtigt. Lokaler Zugriff bleibt dauerhaft und kostenfrei möglich." Zugriff über einen Browser im Heimnetzwerk: http://hycube.local (klappt selten nicht, notfalls über die IP-Adresse der Anlage, zu finden im Router). Für den Zugriff aus dem Internet muss man z.B. einen VPN-Zugang einrichten.
 
-## Backup der SD-Karte machen
+## Anleitung: Backup der SD-Karte machen
 Unter Windows mit dem Programm Win32 Disk Imager. SD-Karte ins Kartenlesegerät stecken, den Laufwerksbuchstaben der Karte als Quelle wählen, Dateiname für Ziel auf der Festplatte eingeben. Die erzeugte Image-Datei ist eine 1:1-Kopie der 16 GB großen SD-Karte, hat also auch jede Menge Leerraum. Man kann sie auf etwa 660 MB komprimieren, um Speicherplatz zu sparen.
 
-Wenn (nicht *falls*) der Originalkarte etwas passiert, kann man das Image auf jede beliebige Karte aufspielen und den Controller weiter betreiben. Die Daten seit dem letzten Backup sind allerdings weg.
+Unter MacOS ist die Sache etwas komplizierter. Siehe [hier](https://www.photovoltaikforum.com/thread/254137-hycube-insolvenz-umr%C3%BCstung-auf-open-source-manager/?postID=4659622#post4659622). Ich vermute, dass es es Programme gibt, die das Auslesen wie unter Windows ohne Kommandozeile erledigen.
+
+Wenn (nicht *falls*) der Originalkarte etwas passiert, kann man das Image auf jede beliebige SD-Karte aufspielen und den Controller weiter betreiben. Die Erzeugungsdaten seit dem letzten Backup sind allerdings weg.
 ***
 
 Die Hycube-"Waschmaschine" eCompact neo besteht aus drei Teilen:
