@@ -47,10 +47,15 @@ Siehe [Unterverzeichnis](https://github.com/xX-Overengineered-Xx/Hycube-PV-Resea
 Siehe [Unterverzeichnis](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/tree/main/Hycube%20Controller-Schublade).
 
 # 4. Zweiter Wechselrichter ohne Batterieanschluss
-Der Sermatec-WR hat nur Anschlüsse für zwei PV-Strings, deshalb werden alle weiteren Strings über einen zweiten, externen WR bedient, der aber nicht mit den Batterien verbunden ist. Das ist oft ein FoxESS T*-G3, wobei * für die Leistung in kW steht. 
+Der Sermatec-WR hat nur Anschlüsse für zwei PV-Strings, deshalb werden alle weiteren Strings über einen zweiten, externen WR bedient, der aber nicht mit den Batterien verbunden ist. Das ist oft ein FoxESS T*-G3, wobei * für die Leistung in kW steht.
+Falls der interne oder der externe WR kaputt geht, sollte man überlegen, ob man nicht einen großen Hybridwechselrichter für die gesamte PV-Anlage beschafft, so dass man die gesamt PV-Leistung in die Batterie laden kann. 
 
 # Wallbox nachrüsten
 Die Wallbox "Hycube Energy Control" ist eine umgelabelte von Heidelberg. Eine originale 11 kW Wallbox vom Typ "Heidelberg energy control" lässt sich mittels eines RS485-auf-USB-Adapters (oft falsch "Dongle" genannt) mit dem HyCube Controller verbinden. Somit lässt sich die Wallbox dann auch smart steuern, sowohl am Display als auch im Web Interface über hycube.local.
+
+# Schaltbare Steckdosen nachrüsten
+Es wurde das EnOcean-System verwendet. Siehe Posting [hier](https://www.photovoltaikforum.com/thread/254137-hycube-insolvenz-umr%C3%BCstung-auf-open-source-manager/?postID=4648154#post4648154). Den USB-Sender nicht direkt in den USB-Hub in der Schublade stecken, sonst ist die Reichweite wegen der Abschirmung der Box zu gering. USB-Verängerungskabel nach ausserhalb der Box verwenden.
+Das EnOcean-system finde ich persönlich zu hochpreisig. Ich würde es nur verwenden, wenn ich absolut kein Interesse an einer eigenen, Hycube-unabhängigen Haussteuerung (z.B. mit Home Assistant) hätte.
 
 # Notstrom
 Hycubes e.Compact hat hinten eine Schuko-Steckdose, mit der man ein Gerät mit einphasig 230 V Notstrom versorgen kann. Bei längerem Stromausfall könnte man dort zum Beispiel die kleine Heizungspumpe anschließen, die Heizungswasser zu den Heizkörpern pumpt, damit im Winter die Heizungsrohre nicht einfrieren.
