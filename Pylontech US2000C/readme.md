@@ -5,6 +5,7 @@ Bei Videos und Anleitungen darauf achten, dass die nicht für UC3000 oder UC5000
 
 Die Batterien werden einfach übereinander in den Schrank geschoben und vorn mit vier Schrauben befestigt. Jede Batterie hat zwei verbundene Pluspole (rot) und zwei verbundene Minuspole (schwarz). Die erste Batterie wird an ein rotes und ein schwarzes Kabel vom Wechselrichter angeschlossen. Dann kommen die kurzen Kabel jeweils zur nächsten Batterie. Es sind alle Pluspole und alle Minuspole miteinander verbunden, die Batterien also parallel geschaltet. Deshalb haben alle die gleiche Spannung von nominell 48 Volt.
 Bei der Datenverkabelung läuft es so ähnlich. Eine Batterie ist die Masterbatterie, sie steuert die übrigen. Sie ist mit einem Datenkabel im unteren mittleren Anschluss "B/RS485" mit dem WR verbunden. Bei Mischbestückung sollte sie die aus der neueste Modellreihe sein. Dann kommen die kurzen schwarzen Datenkabel, jeweils vom "Linkport 1" zum "Linkport 0" der nächsten Batterie.  
+
 ![Foto 4x Pylontech](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/blob/main/Pylontech%20US2000C/4x%20Pylontech.jpg)
 
 ## 1. Was tun, wenn die Batterie pfeift?
@@ -21,7 +22,9 @@ b) Interner Hardwarfehler.
 Lösung: Schalten Sie alle Batterien und Wechselrichter aus. Leistungsschalter abklemmen. Überprüfen Sie die Kabelverbindung und ziehen Sie alle Stromkabel ab. Überprüfen Sie, ob der Stromanschluss beschädigt ist oder nicht. Schalten Sie dann das einzelne Modul ein, ohne dass ein Kabel angeschlossen ist. Wenn immer noch ein Summer ertönt. Dann liegt ein Interner Fehler vor. Schalten Sie das Modul aus und wenden Sie sich an Ihren Händler."
 
 ## 2. Pylontech-Batterien auslesen mit Konsolen-Kabel und BatteryView
-Zum Auslesen von Daten und zum Aktualisieren der Firmware benötigt man ein "Konsolenkabel", das die Batterien mit einem Laptop verbindet. Die Batterie US2000C hat einen RJ45-Anschluss, das ist ein normaler EtherCAT-Stecker. Alte US2000 haben einen RJ11-Anschluss. 
+Man kann die Ladezustände der einzelnen Batterien im Controller unter Einstellungen, Anlagenkontrolle, Batterien auslesen. Mehr als den Ladezustand sieht man dort aber nicht. 
+
+Zum Auslesen weiterer Daten und zum Aktualisieren der Firmware benötigt man ein "Konsolenkabel", das die Batterien mit einem Laptop verbindet. Die Batterie US2000C hat einen RJ45-Anschluss, das ist ein normaler EtherCAT-Stecker. Alte US2000 haben einen RJ11-Anschluss. 
 Man findet im Internet noch Anleitungen für den Eigenbau eines solchen Kabels mit DB9-Stecker auf der anderen Seite. Auch die Anleitung von EFFEKTA.com zeigt solche Kabel. Nur ist der "Serielle Port" D-Sub-Anschluss an aktuellen Laptops schon lange nicht mehr vorhanden. Also bräuchte man zusätzlich noch einen Adapter von DB9 auf USB. Das geht einfacher:
 Ich verwende direkt ein Adapterkabel von RJ45-Stecker auf USB. Wichtig ist, dass das Kabel für das RS232-Protokoll ist und einen CH340-Chip hat. Ein Kabel mit FT32R-Chip von FTDI hat bei mir nicht funktioniert und ich vermute, ein Prolific PL2303GT funktioniert auch nicht. (Das modernere RS485-Protokoll wird an einem anderen Port für die Kommunikation der Batterien mit dem WR genutzt.)
 Die Kabel sind oft hellblau und kosten zwischen 8 und 13 €. Ein Meter ist zu kurz, wenn der Laptop auf dem Cube stehen soll. 
