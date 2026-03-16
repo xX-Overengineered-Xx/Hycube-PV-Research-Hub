@@ -18,8 +18,8 @@ So richtig verstehe ich noch nicht, warum man die Leitung zur Batterie noch extr
 Pylontech schreibt "Zum Schutz des Systems sollte zwischen der Batteriebank und dem Wechselrichter ein Leitungsschutzschalter zwischengeschaltet werden." (Handbuch US2000C v1.4, Seite 35). Die Gefahr geht von der Batterie aus, die bei Kurzschluss sehr hohe Ströme erzeugen kann (einige tausend Ampere). Wenn am Wechselrichter ein Kurzschluss auftritt und die interne Absicherung der Batterie (400 A) versagt, könnten die Kabel zum Wechselrichter schmelzen oder abreißen und Schäden verursachen. Es wird also ein Sicherungselement benötigt, das bei zu hohen Strömen die Plusleitung zwischen Batterien und WR trennt.
 
 ### Sicherungsautomat oder Sicherung?
-Die Schaltfunktion (u.a. im Touchscreen des Hycube-Controllers) entfällt auf jeden Fall, da es keinen vergleichbaren fernbedienbaren Leistungsschalter am Markt gibt. Man kann als Ersatz einen Sicherungsautomaten einbauen oder eine Sicherung. 
-Ein Sicherungsautomat würde gut auf die DIN-Hutschiene darunter passen, aber hat immer Klemmanschlüsse. Man müsste die vorhandenen Kabelschuhe abtrennen und Aderendhülsen (für 25 mm²) aufpressen. Möglich wäre auch ein NH-Sicherungs-Lasttrenner 80 V DC, 1-polig manuell schaltbar für Aufbaumontage (ab 110 €). Falls er räumlich reinpasst.
+Die Ein- und Abschaltfunktion (u.a. im Touchscreen des Hycube-Controllers) entfällt auf jeden Fall, da es keinen vergleichbaren fernbedienbaren Leistungsschalter am Markt gibt. Man kann als Ersatz einen normalen Leistungsschalter einbauen oder eine Sicherung. 
+Ein geeigneter Leistungsschalter wäre z.B. ein Heschen HSM1PV-125 (ab 27 €). 
 Der "Offgridtec MEGA-Fuse Sicherung Halter" hat den Vorteil, dass er Schraubanschlüsse hat, die genau zu den vorhandenen M8-Kabelschuhen passen. Er hat auch ein geschlossenes Gehäuse. Bei den dazu gehörigen MEGA-Sicherungen benötigt man die 58 V-Variante.
 
 <img src="https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/blob/main/Hycube%20Controller-Schublade/CBi%20RAU/MEGA-Sicherungshalter.jpg" width="30%">
