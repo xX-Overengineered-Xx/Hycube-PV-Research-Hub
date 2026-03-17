@@ -53,7 +53,9 @@ Der Sermatec-WR hat nur Anschlüsse für zwei PV-Strings, deshalb werden alle we
 Falls der interne oder der externe WR kaputt geht, sollte man überlegen, ob man nicht einen großen Hybridwechselrichter für die gesamte PV-Anlage beschafft, so dass man die gesamt PV-Leistung in die Batterie laden kann. 
 
 # Wallbox nachrüsten
-Die Wallbox "Hycube Energy Control" ist eine umgelabelte von Heidelberg. Eine originale 11 kW Wallbox vom Typ "Heidelberg energy control" lässt sich mittels eines RS485-auf-USB-Adapters (oft falsch "Dongle" genannt) mit dem HyCube Controller verbinden. Somit lässt sich die Wallbox dann auch smart steuern, sowohl am Display als auch im Web Interface über hycube.local. Siehe Verzeichnis [Wallbox](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/tree/main/Wallbox%20(Heidelberg)).
+Siehe [Unterverzeichnis](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/tree/main/Wallbox%20(Heidelberg)).
+
+Die Wallbox "Hycube Energy Control" ist eine umgelabelte von Heidelberg. Eine originale 11 kW Wallbox vom Typ "Heidelberg energy control" lässt sich mittels eines RS485-auf-USB-Adapters (oft falsch "Dongle" genannt) mit dem HyCube Controller verbinden. Somit lässt sich die Wallbox dann auch smart steuern, sowohl am Display als auch im Web Interface über hycube.local.
 
 # Schaltbare Steckdosen nachrüsten
 Es wurde das EnOcean-System verwendet. Siehe Posting [hier](https://www.photovoltaikforum.com/thread/254137-hycube-insolvenz-umr%C3%BCstung-auf-open-source-manager/?postID=4648154#post4648154). Den USB-Sender nicht direkt in den USB-Hub in der Schublade stecken, sonst ist die Reichweite wegen der Abschirmung der Box zu gering. USB-Verängerungskabel nach ausserhalb der Box verwenden.
