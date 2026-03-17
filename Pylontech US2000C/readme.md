@@ -22,7 +22,7 @@ b) Interner Hardwarfehler.
 Lösung: Schalten Sie alle Batterien und Wechselrichter aus. Leistungsschalter abklemmen. Überprüfen Sie die Kabelverbindung und ziehen Sie alle Stromkabel ab. Überprüfen Sie, ob der Stromanschluss beschädigt ist oder nicht. Schalten Sie dann das einzelne Modul ein, ohne dass ein Kabel angeschlossen ist. Wenn immer noch ein Summer ertönt. Dann liegt ein Interner Fehler vor. Schalten Sie das Modul aus und wenden Sie sich an Ihren Händler."
 
 ## 2. Pylontech-Batterien auslesen mit Konsolen-Kabel und BatteryView
-Man kann die Ladezustände der einzelnen Batterien im Controller unter Einstellungen, Anlagenkontrolle, Batterien auslesen. Mehr als den Ladezustand sieht man dort aber nicht. 
+Man kann die Spannungen aller Zellen und die Ladezustände (SoC) der einzelnen Batterien auch im Controller unter Einstellungen, Anlagenkontrolle, Batterien auslesen. 
 
 Zum Auslesen weiterer Daten und zum Aktualisieren der Firmware benötigt man ein "Konsolenkabel", das die Batterien mit einem Laptop verbindet. Die Batterie US2000C hat einen RJ45-Anschluss, das ist ein normaler EtherCAT-Stecker. Alte US2000 haben einen RJ11-Anschluss. 
 Man findet im Internet noch Anleitungen für den Eigenbau eines solchen Kabels mit DB9-Stecker auf der anderen Seite. Auch die Anleitung von EFFEKTA.com zeigt solche Kabel. Nur ist der "Serielle Port" D-Sub-Anschluss an aktuellen Laptops schon lange nicht mehr vorhanden. Also bräuchte man zusätzlich noch einen Adapter von DB9 auf USB. Das geht einfacher:
