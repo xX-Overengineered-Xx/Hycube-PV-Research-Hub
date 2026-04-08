@@ -1,6 +1,6 @@
 # Batteriespeicher
 Der Batteriespeicher besteht aus zwei bis sechs Pylontech US2000C Akku-Packs 48 V mit je 2,4 kWh parallel. 
-Die Pylontechs gibt es schon lange (erste Versionen seit 2016) und sie sind gut dokumentiert. Bei Markteinführung 2016 hießen die Modelle US200B oder US2000 Plus. Der Name wurde 2019 zu US2000 geändert. Etwa 2022 wurde die aktuelle Serie US2000C eingeführt, die bessere Kommunikation, Softstart und einen Anschlusskontakt zum Fernstart bietet. Die Bezeichnung "US2000" oder "US2000C" steht vorn groß drauf.
+Die Pylontechs gibt es schon lange (erste Versionen seit 2016) und sie sind gut dokumentiert. Bei Markteinführung 2016 hießen die Modelle US200B oder US2000 Plus. Der Name wurde 2019 zu US2000 geändert. Etwa 2022 wurde die aktuelle Serie US2000C eingeführt, die bessere Kommunikation, Softstart und einen Anschlusskontakt zum Fernstart bietet. Die Bezeichnung "US2000" oder "US2000C" steht vorn groß drauf. (Stand 2026 wird die UC2000C nicht mehr hergestellt.)
 Bei Videos und Anleitungen darauf achten, dass die nicht für UC3000 oder UC5000 sind. Diese größeren Modelle sind neuer und etwas anders.
 
 Die Batterien werden einfach übereinander in den Schrank geschoben und vorn mit vier Schrauben befestigt. Jede Batterie hat zwei verbundene Pluspole (rot) und zwei verbundene Minuspole (schwarz). Die erste Batterie wird an ein rotes und ein schwarzes Kabel vom Wechselrichter angeschlossen. Dann kommen die kurzen Kabel jeweils zur nächsten Batterie. Es sind alle Pluspole und alle Minuspole miteinander verbunden, die Batterien also parallel geschaltet. Deshalb haben alle die gleiche Spannung von nominell 48 Volt.
@@ -9,7 +9,7 @@ Bei der Datenverkabelung läuft es so ähnlich. Eine Batterie ist die Masterbatt
 ![Foto 4x Pylontech](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/blob/main/Pylontech%20US2000C/4x%20Pylontech.jpg)
 
 ## 1. Was tun, wenn die Batterie pfeift?
-Achtung: Da ist ersthaft etwas falsch. Wer hier einfach ein paarmal den Reset-Knopf drückt, riskiert mindestens seine Batterien.
+Achtung: Da ist ernsthaft etwas falsch. Wer hier einfach ein paarmal den Reset-Knopf drückt, riskiert mindestens seine Batterien.
 
 Pylontech schreibt: "Summer weisen auf einen fehlerhaften Zustand mit hohem Risiko hin.
 
