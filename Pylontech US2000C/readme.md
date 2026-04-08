@@ -1,5 +1,5 @@
 # Batteriespeicher
-Der Batteriespeicher besteht aus zwei bis sechs Pylontech US2000C Akku-Packs 48 V mit je 2,4 kWh parallel. 
+Der Batteriespeicher besteht aus zwei bis sechs Pylontech US2000C Akku-Packs 48 V mit je 2,4 kWh parallel. (Die 48 V kommen von den je 15 verbauten Einzelzellen. Heutzutage werden üblicherweise 16 Zellen verbaut, so dass die nominelle Spannung 51,2 V beträgt.)
 Die Pylontechs gibt es schon lange (erste Versionen seit 2016) und sie sind gut dokumentiert. Bei Markteinführung 2016 hießen die Modelle US200B oder US2000 Plus. Der Name wurde 2019 zu US2000 geändert. Etwa 2022 wurde die aktuelle Serie US2000C eingeführt, die bessere Kommunikation, Softstart und einen Anschlusskontakt zum Fernstart bietet. Die Bezeichnung "US2000" oder "US2000C" steht vorn groß drauf. (Stand 2026 wird die UC2000C nicht mehr hergestellt.)
 Bei Videos und Anleitungen darauf achten, dass die nicht für UC3000 oder UC5000 sind. Diese größeren Modelle sind neuer und etwas anders.
 
