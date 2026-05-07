@@ -5,7 +5,7 @@ Das ist ein umgelabelter Sermatec SMT-5KT-LV, der auf der Rückseite des Cube mi
 Hier sieht man den weißen Wechselrichter noch ganz gut, bevor die Batterien eingebaut werden:
 <img src="https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/blob/main/hycube%20e_Compact%20ohne%20Batterien.jpg" width="60%">
 
-Der WR kann etwa 5 kW, deshalb ist die Entladeleistung selbst bei den großen Batteriesätzen auf 4,8 kW begrenzt.
+Der WR kann etwa 5 kW, deshalb ist die Entladeleistung selbst bei den großen Batteriesätzen auf 4,8 kW begrenzt. Die Einspeiseleistung ist auf 4600 VA begrenzt (Schieflastgrenze), ebenso wie für den zusätzlichen WR an der Wand.
 
 Der Wechselrichter baut ein eigenes WLAN mit dem Namen "ST000921…" mit kurzer Reichweite auf. Zum Auslesen einiger Daten kann man auf einem Mobiltelefon die Sermatec-App installieren und sich mit diesem WLAN verbinden (Passwort ist gsstes123456). Man muss aber ziemlich dicht daneben stehen. Wer mehr Reichweite braucht, schliesst an den Antennenanschluss (SMA) eine WLAN-Antenne an. Gegen Sicherheitsbedenken hilft eine abschirmende Verschlusskappe aus Metall.
 
