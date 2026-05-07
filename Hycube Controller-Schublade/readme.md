@@ -2,7 +2,7 @@
 Dies ist der interessanteste Teil, denn die anderen Komponenten sind recht gut dokumentiert, wenn man ihren Namen kennt.
 
 Der zentrale Controller ist ein [Chipsee EPC-A8-50-C](https://chipsee.com/product/epca8050c/) Minicomputer ("Controller") mit farbigem 5 Zoll-Display mit Touchscreen. Das ist die flache Kunststoffkiste hinter dem Touchscreen rechts. (Genau genommen ist es ein Typ PPC mit Gehäuse, aber die Dokumentation nennt oft nur EPC.) Darauf läuft ein Embedded-Linux-Betriebssystem auf einem ARM Cortex-A8. 
-Links auf der Oberseite ist ein Slot für eine microSD-Karte. Auf der Karte ist das Betriebssystem und alle bisherigen Verlaufsdaten, tagesgenau in SQL-Dateien. Über Ethernet-Kabel stellt der Controller auch den Webserver für die Hycube.local-Oberfläche im lokalen LAN-Netzwerk (in jedem Webbrowser).
+Links auf der Oberseite ist ein Slot für eine microSD-Karte. Wie bei fast allen SD-Karten muss man oben leicht draufdrücken, dann springt sie einem per Federmechanismus ein Stück entgegen. Auf der Karte ist das Betriebssystem und alle bisherigen Verlaufsdaten, tagesgenau in SQL-Dateien. Über Ethernet-Kabel stellt der Controller auch den Webserver für die Hycube.local-Oberfläche im lokalen LAN-Netzwerk (in jedem Webbrowser).
 
 Weitere Komponenten
 Hinten ganz links zwei Verteilerblöcke Contaclip 27202.0 für Plus und Minus 48 V.
