@@ -82,7 +82,7 @@ Glückwunsch, die teuren Batterien sind okay, es ist wahrscheinlich der Wechselr
 
 Ein Fachmann könnte jetzt im abgeschalteten Zustand eine Durchgangsprüfung zwischen den freien Enden der beiden abgezogenen Batteriekabeln machen. Wenn man dort Null Ohm misst, ist wahrscheinlich der Wechselrichter kaputt. Der nächste Schritt wäre jetzt, über die App des Wechselrichters eine Fehlermeldung zu bekommen, zum Beispiel "Bus Insulation Resistance Fault".
 
-Falls trotzdem noch Batterien Fehler melden, liest man sie einzeln oder zusammen per Konsolenkabel und BatteryView aus. 
+Falls trotzdem noch Batterien Fehler melden, liest man sie einzeln oder zusammen per [Konsolenkabel und BatteryView](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/tree/main/Pylontech%20US2000C#2-pylontech-batterien-auslesen-mit-konsolen-kabel-und-batteryview) aus. 
 
 Wenn der Wechselrichter und die Batterien einzeln ohne Fehlermeldung starten, der Controller aber nach mehreren Minuten (und Drücken des weissen Startknopfes) nicht, könnte es sein, dass der DC/DC-Wandler ("Netzteil") von Traco für die Hilfskomponenten in der Schublade defekt ist. Ein Fachmann könnte entweder 18-75 V DC am Eingang oder 24 V DC am Ausgang anschliessen, um zu sehen, ob der Controller startet. Der Controller nimmt dann direkt wieder Kontakt mit dem Internetserver auf.
 
