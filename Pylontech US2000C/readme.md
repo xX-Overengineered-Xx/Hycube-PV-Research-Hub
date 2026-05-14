@@ -75,7 +75,7 @@ Die häufig verwendeten 53,2 V Ladespannung sind bei 15 Zellen in Reihe je 3,55 
 Victron versucht das Problem zu vermeiden, indem sie die Ladespannung des Wechselrichters auf 52,4 V begrenzen. Dadurch verringert man deutlich das Risiko, dass die Batterie mit OV abschaltet und das Balancing ausfällt. Der Nachteil ist eine geringfügige Verringerung der Kapazität der Batterie, aber nur bei höchster Ladung.
 Das funktioniert allerdings nur, wenn der Wechselrichter seine Begrenzung auch einhält und nicht durch die per Bussystem gegebenen Grenzwerte des BMS überstimmt wird. Im BMS der Pylontech-Batterien stehen seit Jahren die gleichen höheren Werte.
 
-Laut Christoph Weidner (deyeguru, Kommentar [hier](https://www.youtube.com/watch?v=xAQWjpebymQ)) hatten die von ihm ausgewerteten aufgeblähten Akkus von Beginn an mit HV und OV Fehlern zu kämpfen. HV-Fehler (High Voltage) können alle möglichen Fehler sein, unter anderem fehlerhafte Kommunikation zwischen BMS und Wechselrichter aber auch dass Über- oder Unterspannungsschutz ausgelöst wurden. Wenn man die Fehlermeldungen im Betrieb auswerten könnte, hätte man eine gute Vorwarnung.
+Laut Christoph Weidner (deyeguru, Kommentar [hier](https://www.youtube.com/watch?v=xAQWjpebymQ)) hatten die von ihm ausgewerteten aufgeblähten Akkus von Beginn an mit HV und OV Fehlern zu kämpfen. HV-Fehler (High Voltage) können alle möglichen Fehler sein, unter anderem fehlerhafte Kommunikation zwischen BMS und Wechselrichter, aber auch, dass Über- oder Unterspannungsschutz ausgelöst wurden. Wenn man die Fehlermeldungen im Betrieb auswerten könnte, hätte man eine gute Vorwarnung. Der Hycube-Wechselrichter macht das offensichtlich nicht.
 
 Das BMS kann die Zellen auch im Stillstand untereinander ausgleichen, aber nur wenn sich die Zellen im flachen Bereich der Ladekurve, also im recht hohen Ladezustand (SoC, State of Charge) größer als 92% befinden. Außerdem kann der Regler nur 100 mA (?) pro Zelle übertragen, also dauert das ewig. Wenn die Batterien also nicht längere Zeit über 92% SoC stehen, kann das Balancing schlecht sein.
 
@@ -86,6 +86,17 @@ Wie bekommt man also Pylontech-Batterien kaputt?
 - Einen Wechselrichter benutzen, der Überspannungswarnungen und unterschiedliche Zellspannungen ignoriert. 
 - Batterien nie voll geladen länger stehen lassen, um Self-Balancing zu verhindern.
 
-## 6. Hardware
+## 6. Batterien nachrüsten
+Sollte man sich aus verschiedenen Gründen gut überlegen, ist nur in Ausnahmefällen sinnvoll. Funktioniert aber problemlos, die neuen Batterien werden auch im Webinterface und Controller angezeigt. Ein Grund ist, dass der Hycube-WR nur einen Teil der PV-Leistung zur Verfügung hat (höchstens 5,2 kW, meist je nach Panel-Belegung weniger) und davon nur einen Teil in die Batterien laden kann (3,36 kW).
+
+Man kann bis zu 16 Pylontech-Batterien in einer logischen Gruppe zusammenschließen, die von einer Masterbatterie verwaltet werden (Betriebsanleitung US2000C v1.4, Seite 12). Der Master ist die letzte Batterie, sollte das neueste Modell sein und bekommt als einziger ein Kabel in seinen RS485-Port für die Kommunikation mit dem WR. (Wie man neue Batterien laden muss, damit sie mit den anderen zusammengeschaltet werden können: Siehe oben.)
+
+Pylontech US2000C werden normalerweise mit 25 A geladen und entladen, so dass die Stromtragfähigkeit der Anschlusskabel beachtet werden muss, 120 A (bzw. 100 A dauerhaft). Demnach müsste man mit einem leistungsfähigen WR schon ab fünf Batterien je zwei Kabel zum WR anschließen.
+'Glücklicherweise' kann der Hycube-WR die 120 A überhaupt nur sehr kurzzeitig (im Datenblatt 6000 W), beim normalen Entladen sind es 100 A und bei Laden unter 70 A. Das ist für die vorhandenen Kabel und Absicherung gut machbar, egal wieviele Batterien dranhängen.
+
+Die Verkabelung zusätzlicher Batterien ist also beim e.Compact sehr einfach: An die unterste Batterie anschließen und das Kommunikationskabel zur letzten neuen umstecken. 
+(Man kann natürlich den neuen Batteriesatz mit zusätzlichen Kabeln in der 'Schublade' anschließen, falls das räumlich besser passt. Aber das Pylontech-Handbuch schlägt das nicht vor.)
+
+## 7. Hardware
 Wer einmal risikofrei in die Pylontech-Batterien hineinsehen will, wie das BMS aussieht, dem sei das [YouTube-Video von José Faria](https://www.youtube.com/watch?v=BYKeGvza1OM) empfohlen.
 Er zeigt einen Fall, dass die Batterie keinen Fehler und keine Auffälligkeiten meldet, aber keine Spannung liefert. Die letzte Schutzstufe ganz links sind selbst rückstellende Sicherungen, die auch durch eine interne Heizung ausgelöst werden können. Die waren alle durchgebrannt und werden von ihm ersetzt.
