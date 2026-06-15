@@ -20,7 +20,7 @@ Das Problem ist also nicht "Wir müssen ein Hycube-System reparieren, Hycube gib
 Der reine Materialpreis für einen vergleichbaren 'einfachen' Hydrid-Wechselrichter (5,x kWp, einphasig 230 V, LV-Batterieanschluss, möglichst von der Pylontech-Kompatibilitätsliste) liegt "so um die 1000 €".
 Man kann auch die Chance nutzen, mit einem besseren Wechselrichter aufzurüsten. Drei Phasen, unterbrechungfreier Ersatzstrom, alle PV-Panels an die Batterie angeschlossen...
 
-Falls die Anlage läuft: Hycube-PV-Systeme funktionieren auch ohne Internetserver von Hycube weiter. Bisher ist noch keine Funktion bekannt, die über die lokale Weboberfläche hycube.local nicht einstellbar ist. Außer natürlich der dynamische Stromtarif HYMAX, die aber wohl noch gar nicht vollständig gestartet war.
+Falls die Anlage läuft: Hycube-PV-Systeme funktionieren auch ohne Internetserver von Hycube weiter. Ausgenommen hiervon sind prognosebasiertes Laden und der dynamische Stromtarif HYMAX, der aber wohl noch gar nicht vollständig gestartet war.
 
 # Mein System läuft, was sollte ich jetzt tun?
 - Backup der SD-Karte im Controller machen. Auf die SD-Karte werden regelmäßig alle Erzeugungs- und Verbrauchsdaten geschrieben. SD-Karten überleben eine begrenzte Anzahl Schreibvorgänge, danach geht sie kaputt. Ohne Hycube kann der Inhalt der SD-Karte nicht wieder hergestellt werden. Der Controller funktioniert nicht mehr, weil er kein Betriebssystem hat (das läßt sich wohl lösen) aber die historischen Erzeugung- und Verbrauchsdaten sind weg. Die SD-Karte ist eine echte Archillesferse des Systems. Manchmal ist eine defekte Karte noch lesbar, nur nicht beschreibbar (um die Daten zu schützen), aber darauf sollte man sich nicht verlassen. Ich empfehle den Einsatz einer neueren High Endurance-Karte, die deutlich länger hält.
@@ -42,7 +42,7 @@ Die Hycube-"Waschmaschine" eCompact neo besteht aus drei Teilen:
 # 1. Wechselrichter Hycube HY-5K-TL-LV
 Siehe [Unterverzeichnis](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/tree/main/Sermatec%20SMT-5K-TL-LV).
 
-# 2. Batteriespeicher Pylontech UC2000C
+# 2. Batteriespeicher Pylontech US2000C
 Siehe [Unterverzeichnis](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/tree/main/Pylontech%20US2000C).
 
 # 3. Hycube Controller-Schublade
@@ -89,6 +89,6 @@ Wenn der Wechselrichter und die Batterien einzeln ohne Fehlermeldung starten, de
 # Home Assistant
 Da der Hycube-Controller im Hausnetz eine Weboberfläche bereitstellt (hycube.local) kann man über einen RESTful-Sensor eine json-Abfrage aller angezeigten Werte starten ([Link](https://community.simon42.com/t/daten-aus-http-abfrage-auswerten/60653)). Einstellen kann man damit aber nichts.
 
-Für den Sermatec-WR gibt eine standalone-Integration ([Link](https://github.com/sermatec-opensource/homeassistant-sermatec-inverter)) für Home Assistant, allerdings muss man den WR dann per LAN-Kabel verbinden. Der Ethernet-Stecker ist aber mit dem Hycube-Controller verbunden.
+Für den Sermatec-WR gibt es eine standalone-Integration ([Link](https://github.com/sermatec-opensource/homeassistant-sermatec-inverter)) für Home Assistant, allerdings muss man den WR dann per LAN-Kabel verbinden. Der Ethernet-Stecker ist aber mit dem Hycube-Controller verbunden.
 
 Die App EVCC (Electric Vehicle Charge Controller)([Link](https://docs.evcc.io/en/docs/Home), [GitHub](https://github.com/evcc-io/evcc)) unterstützt seit Ende 2025 auch den Sermatec. EVCC kann das Ladeverhalten des WR an Wallboxen oder Batterien steuern. Es gibt auch eine inoffizielle Home Assistant Integration ([Link](https://docs.evcc.io/docs/integrations/home-assistant))([GitHub](https://github.com/marq24/ha-evcc))([Erklärung, warum gut](https://smarterkram.de/8590/warum-evcc-in-kombination-mit-home-assistant-richtig-spass-macht/))([Tipps](https://github.com/evcc-io/evcc/discussions/19628)).
