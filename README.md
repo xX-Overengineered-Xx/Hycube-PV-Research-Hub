@@ -13,7 +13,7 @@ Ich fange mit dem "e.Compact neo" an, weil ich solch ein System besitze.
 # Zusammenfassung, ganz wichtig
 Eine "Hycube-Anlage e.Compact neo" ist aus zugekauften Komponenten zusammengestellt. Alle Komponenten, außer dem eingebauten Wechselrichter, sind einzeln frei nachkaufbar. Sogar der Minicomputer des Controllers. Hycube-Controller und Wechselrichter bilden zusammen die "Hycube-Anlage".
 
-<ins><b>Falls der Wechselrichter kaputtgeht, ist es sofort kein Hycube-System mehr.</b></ins> Der Hycube-Controller arbeitet nicht mit anderen Wechselrichtern, kann also weg. Mit dem Wechselrichter eines anderen Herstellers kauft man praktischerweise auch einen passenden Controller von diesem Hersteller.
+<ins><b>Falls der Wechselrichter oder der Controller kaputtgehen, ist es sofort kein Hycube-System mehr.</b></ins> Der Hycube-Controller arbeitet nicht mit anderen Wechselrichtern, kann also weg. Mit dem Wechselrichter eines anderen Herstellers kauft man entweder einen passenden Controller von diesem Hersteller oder ein externes System (EVCC oder Home Assistant).
 
 Das Problem ist also nicht "Wir müssen ein Hycube-System reparieren, Hycube gibt es nicht mehr und wir haben keine Ahnung", sondern "Wir kaufen einen neuen Wechselrichter und schließen unsere Batterien und PV-Panels an". Das hört sich auch für einen örtlichen Installateur deutlich netter an.
 
@@ -49,7 +49,7 @@ Siehe [Unterverzeichnis](https://github.com/xX-Overengineered-Xx/Hycube-PV-Resea
 Siehe [Unterverzeichnis](https://github.com/xX-Overengineered-Xx/Hycube-PV-Research-Hub/tree/main/Hycube%20Controller-Schublade).
 
 # 4. Zweiter Wechselrichter ohne Batterieanschluss
-Der Sermatec-WR hat nur Anschlüsse für zwei PV-Strings, deshalb werden alle weiteren Strings über einen zweiten, externen WR bedient, der aber nicht mit den Batterien verbunden ist. Das ist oft ein FoxESS T*-G3, wobei * für die Leistung in kW steht.
+Der Sermatec-WR kann maximal 5,2 kWp PV-Anschlussleistung, deshalb werden größere Dachanlagen über einen zweiten, externen WR bedient, der aber nicht mit den Batterien verbunden ist. Das ist oft ein FoxESS T*-G3, wobei * für die Leistung in kW steht.
 Falls der interne oder der externe WR kaputt geht, sollte man überlegen, ob man nicht einen großen Hybridwechselrichter für die gesamte PV-Anlage beschafft, so dass man die gesamt PV-Leistung in die Batterie laden kann. 
 
 # Wallbox nachrüsten
