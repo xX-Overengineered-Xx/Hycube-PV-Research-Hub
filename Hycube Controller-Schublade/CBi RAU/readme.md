@@ -13,7 +13,8 @@ Eingebaut ist der Schalter ganz links in der 'Schublade'.
 CBi International hat auf Anfrage mitgeteilt, dass sie nicht an Privatleute liefern, sondern nur an Großhändler oder die Industrie. Ihr Großhändler für Europa ist [emcomp.se](https://www.emcomp.se/products/cbi-circuit-breakers/cbi-front-mounted-rear-connected-mcbs-cbes/rau-remote-controlled-mcb-05-300a-for-ac-and-dc-applications/). Man könnte versuchen, dort eine Sammelbestellung zu organisieren, aber - siehe nächster Abschnitt. 
 
 ### Überhaupt nötig?
-So richtig verstehe ich noch nicht, warum man die Leitung zur Batterie noch extra trennen muss. Ich vermute, Hycube hat das Teil zur Fernwartung eingebaut, damit man ferngesteuert die Batterien zuschalten kann.  
+Hycube hat dieses ungewöhnliche Gerät höchstwahrscheinlich zur Fernwartung eingebaut, damit man ferngesteuert die Batterien zuschalten kann. Man darf nicht davon ausgehen, dass ein Kunde einen Schalter bedienen kann. 
+Da die Fernwartung zukünftig entfällt, kann man auf die Fernbedienbarkeit verzichten.
 
 Pylontech schreibt "Zum Schutz des Systems sollte zwischen der Batteriebank und dem Wechselrichter ein Leitungsschutzschalter zwischengeschaltet werden." (Handbuch US2000C v1.4, Seite 35). Die Gefahr geht von der Batterie aus, die bei Kurzschluss sehr hohe Ströme erzeugen kann (einige tausend Ampere). Wenn am Wechselrichter ein Kurzschluss auftritt und die interne Absicherung der Batterie (400 A) versagt, könnten die Kabel zum Wechselrichter schmelzen oder abreißen und Schäden verursachen. Es wird also ein Sicherungselement benötigt, das bei zu hohen Strömen die Plusleitung zwischen Batterien und WR trennt.
 
