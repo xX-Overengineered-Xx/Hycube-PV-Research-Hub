@@ -1,0 +1,143 @@
+### Warte auf Kommunikation mit Wechselrichter... ###
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Request : 010340460008B019<br>
+Response: 01031000000000000000000000000000000000E459 --> Device Status1 = 0<br>
+### Kommunikation hergestellt ###
+### Start der Initialisierung ###
+Request : 0106410000FFDDB6 --> Vorgabewert 0x00FF --> Remote Control (INACTIVE)<br>
+Response: 0106410000FFDDB6<br>
+Request : 0106350100025607 --> Vorgabewert 2 --> PCU control policy (enabled)<br>
+Response: 0106350100025607<br>
+Request : 0106407B0000EC13 --> Vorgabewert 0 --> BMS error cleared<br>
+Response: 0106407B0000EC13<br>
+Request : 0106407800EE9C5F --> Vorgabewert 0x00EE --> EPS error clear mode (OFF, manual operation)<br>
+Response: 0106407800EE9C5F<br>
+Request : 0106405801F41DCE --> Vorgabewert 500 --> maximaler Ladestrom, Default 50,0A<br>
+Response: 0106405801F41DCE<br>
+Request : 0106405901F44C0E --> Vorgabewert 500 --> maximaler Entladestrom, Default 50,0A<br>
+Response: 0106405901F44C0E<br>
+Request : 0106405E000A7DDF --> Vorgabewert 10 --> Battery Minimum SOC off grid, Default 10%<br>
+Response: 0106405E000A7DDF<br>
+Request : 0106405F000A2C1F --> Vorgabewert 10 --> Battery Minimum SOC on grid, Default 10%<br>
+Response: 0106405F000A2C1F<br>
+Request : 0106405B000FADDD --> Vorgabewert 15 --> Battery Discharge SOC min, 15%<br>
+Response: 0106405B000FADDD<br>
+Request : 0106406411F8D007 --> Vorgabewert 4600 --> maximale AC-Ausgangsleistung, Default 4600W<br>
+Response: 0106406411F8D007<br>
+Request : 0106406300032C15 --> Vorgabewert 3 --> Grid Code, 3=Germany<br>
+Response: 0106406300032C15<br>
+Request : 0106405C021C5CB1 --> Vorgabewert 540 --> Ladeschlussspannung 54,0V<br>
+Response: 0106405C021C5CB1<br>
+Request : 0106405D01D80C12 --> Vorgabewert 472 --> Entladeschlussspannung 47,2V<br>
+Response: 0106405D01D80C12<br>
+Request : 010640A100EE4DA4 --> Vorgabewert 0x00EE --> Notstrom (EPS) OFF<br>
+Response: 010640A100EE4DA4<br>
+Request : 0106405300006C1B --> Vorgabewert 0 --> Power Factor Mode = Fixed Cos Phi<br>
+Response: 0106405300006C1B<br>
+Request : 0106406603E87CAB --> Vorgabewert 1000 --> Power Factor, Default CosPhi 1,000<br>
+Response: 0106406603E87CAB<br>
+Request : 0106406500008C15 --> Vorgabewert 0 --> Blindleistung 0 (WATT ?)<br>
+Response: 0106406500008C15<br>
+Request : 01064100FF00DC06 --> Vorgabewert 0xFF00 --> Remote Control (ACTIVE)<br>
+Response: 01064100FF00DC06<br>
+### Ende der Initialisierung ###
+### Start Betrieb CubeConnect ###
+### Start Initialisierung CubeConnect ###
+Request : 010334010001DBFA   --> Anfrage PCU Version<br>
+Response: 01030201F7F852     --> Antwort 503 --> PCU Version 5.0.3<br>
+Request : 01034024000291C0   --> Anfrage DSP Version<br>
+Response: 010304007A3C064AE8 --> Antwort 0x007A 0x3C06 = "122.15366"<br>
+Request : 01034024000291C0   --> Anfrage DSP Version<br>
+Response: 010304007A3C064AE8 --> Antwort 0x007A 0x3C06 = "122.15366"<br>
+Request : 01035301000DC48B   --> Anfrage Seriennummer<br>
+Response: 01031A53543636303231363030303941xxxxxxxxxxxxxxxxxxxxxxxxxxF32F --> Antwort Seriennummer = "ST6602160009Axxxxxxxxxxxxx"<br>
+### Ende Initialisierung CubeConnect ###
+### Start zyklischer Betrieb CubeConnect ###
+Request : 01033000000F0ACE --> 1. Abfrage Live-Werte vom BMS (unsinnig, weil Batterie nicht am WR)<br>
+Response: 01031E000000000000000000000000000000000000000000000000000000000001197A<br>
+Request : 01034000003851D8 --> 2. Abfrage Live-Werte Wechselrichter<br>
+Response: 01037009E70001001909E8000400610004000008FC0000000000000000000000000000000000000000000000001388FC19000000000000000001EC000000000C1C000801270C1D0C270000007A3C0600000000000000000114011A0000000600000000000000000000000003E70000000000001E0D<br>
+Request : 010340800010502E --> 3. Abfrage NA-Schutz Parameter<br>
+Response: 0103200B3B09E20730040B0006012C0122001414E4141E128E11FA000200060006000217AF<br>
+Request : 010340460008B019 --> 4. Abfrage Device Status und Fault Status<br>
+Response: 01031000030004000000000000400000000000A71C<br>
+Request : 01033000000F0ACE --> 1. Abfrage Live-Werte vom BMS (unsinnig, weil Batterie nicht am WR)<br>
+Response: 01031E000000000000000000000000000000000000000000000000000000000001197A<br>
+Request : 01034000003851D8 --> 2. Abfrage Live-Werte Wechselrichter<br>
+Response: 01037009E70001001909E8000400600004000009030000000000000000000000000000000000000000000000001388FC19000000000000000001EC000000000C1C000701270C1D0C270000007A3C0600000000000000000114011A0000000600000000000000000000000003E700000000000021E9<br>
+Request : 010340800010502E --> 3. Abfrage NA-Schutz Parameter<br>
+Response: 0103200B3B09E20730040B0006012C0122001414E4141E128E11FA000200060006000217AF<br>
+Request : 010340460008B019 --> 4. Abfrage Device Status und Fault Status<br>
+Response: 01031000030004000000000000400000000000A71C<br>
+Request : 0106405A0000BC19 --> Vorgabewert 0<br>
+Response: 0106405A0000BC19<br>
+Request : 01064100FF00DC06 --> Vorgabewert 0xFF00 --> Remote Control (ACTIVE)<br>
+Response: 01064100FF00DC06<br>
+Request : 0106405802BC1D08 --> Vorgabewert 700 --> maximaler Ladestrom 70,0A = 0x02BC<br>
+Response: 0106405802BC1D08<br>
+Request : 0106405903E84CA7 --> Vorgabewert 1000 --> maximaler Entladestrom 100,0A =0x03E8<br>
+Response: 0106405903E84CA7<br>
+Request : 0106406300032C15 --> Vorgabewert 3 --> Grid Code, 3=Germany<br>
+Response: 0106406300032C15<br>
+Request : 0106406411F8D007 --> Vorgabewert 4600 --> maximale AC-Ausgangsleistung 4600W<br>
+Response: 0106406411F8D007<br>
+Request : 0106406603E87CAB --> Vorgabewert 1000 --> Power Factor, CosPhi 1,000<br>
+Response: 0106406603E87CAB<br>
+Request : 010640A100EE4DA4 --> Vorgabewert 0x00EE --> Notstrom (EPS) OFF<br>
+Response: 010640A100EE4DA4<br>
+Request : 0106406500008C15 --> Vorgabewert 0 --> Blindleistung 0 (WATT ?)<br>
+Response: 0106406500008C15<br>
+Request : 0106406603E87CAB --> Vorgabewert 1000 --> Power Factor, CosPhi 1,000<br>
+Response: 0106406603E87CAB<br>
+Request : 01033000000F0ACE --> 1. Abfrage Live-Werte vom BMS (unsinnig, weil Batterie nicht am WR)<br>
+Response: 01031E000000000000000000000000000000000000000000000000000000000001197A<br>
+Request : 01034000003851D8 --> 2. Abfrage Live-Werte Wechselrichter<br>
+Response: 01037009E80001001809EA000400610932000908FB0000000900000000000000000000000000000000000000001388FFFAFFFFFF1D00E3000701EC000000000EBC0022012A0BD00BC60000007A3C0600000000000400020115011A000000050000000013870000000000000098000000000000941F<br>
+Request : 010340800010502E --> 3. Abfrage NA-Schutz Parameter<br>
+Response: 0103200B3B09E20730040B0006012C0122001414E4141E128E11FA000200060006000217AF<br>
+Request : 010340460008B019 --> 4. Abfrage Device Status und Fault Status<br>
+Response: 0103100323004A0000000000004000000000002FBB<br>
+Request : 01033000000F0ACE --> 1. Abfrage Live-Werte vom BMS (unsinnig, weil Batterie nicht am WR)<br>
+Response: 01031E000000000000000000000000000000000000000000000000000000000001197A<br>
+Request : 01034000003851D8 --> 2. Abfrage Live-Werte Wechselrichter<br>
+Response: 01037009E80001001809EA00040060092F000908F70000000900000000000000000000000000000000000000001388FFFBFFFFFF1B00E5000501EC000000000ECA001B012A0BD50BC40000007A3C0600000000000300020115011A0000000500000000138800000000000000930000000000003A6E<br>
+Request : 010340800010502E --> 3. Abfrage NA-Schutz Parameter<br>
+Response: 0103200B3B09E20730040B0006012C0122001414E4141E128E11FA000200060006000217AF<br>
+Request : 010340460008B019 --> 4. Abfrage Device Status und Fault Status
+Response: 0103100323007A0000000000004000000000006E4B
