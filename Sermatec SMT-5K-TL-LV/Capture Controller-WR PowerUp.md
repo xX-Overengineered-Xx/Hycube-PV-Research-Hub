@@ -83,7 +83,7 @@ Request : 010334010001DBFA   --> Anfrage PCU Version<br>
 Response: 01030201F7F852     --> Antwort 503 --> PCU Version 5.0.3<br>
 Request : 01034024000291C0   --> Anfrage DSP Version<br>
 Response: 010304007A3C064AE8 --> Antwort 0x007A 0x3C06 = "122.15366"<br>
-Request : 01034024000291C0   --> Anfrage DSP Version<br>
+Request : 01034024000291C0   --> Anfrage DSP Version (Abfrage ist doppelt und ein "Fehler" im Code, nicht hier im Listing)<br>
 Response: 010304007A3C064AE8 --> Antwort 0x007A 0x3C06 = "122.15366"<br>
 Request : 01035301000DC48B   --> Anfrage Seriennummer<br>
 Response: 01031A53543636303231363030303941xxxxxxxxxxxxxxxxxxxxxxxxxxF32F --> Antwort Seriennummer = "ST6602160009Axxxxxxxxxxxxx"<br>
