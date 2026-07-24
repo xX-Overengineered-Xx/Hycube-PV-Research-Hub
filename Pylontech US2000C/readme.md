@@ -97,7 +97,7 @@ Pylontech US2000C werden normalerweise mit 25 A geladen und entladen, so dass di
 'Glücklicherweise' kann der Hycube-WR die 120 A überhaupt nur sehr kurzzeitig (im Datenblatt 6000 W), beim normalen Entladen sind es 100 A und bei Laden unter 70 A. Das ist für die vorhandenen Kabel und Absicherung gut machbar, egal wieviele Batterien dranhängen.
 
 Die Verkabelung zusätzlicher Batterien ist also beim e.Compact sehr einfach: An die unterste Batterie anschließen und das Kommunikationskabel zur letzten neuen umstecken. 
-(Man kann natürlich den neuen Batteriesatz mit zusätzlichen Kabeln in der 'Schublade' anschließen, falls das räumlich besser passt. Aber das Pylontech-Handbuch schlägt das nicht vor.)
+(Man kann natürlich den neuen Batteriesatz mit zusätzlichen Kabeln direkt in der 'Schublade' anschließen, falls das räumlich besser passt. Aber das Pylontech-Handbuch schlägt das nicht vor.)
 
 ## 7. Hardware
 Wer einmal risikofrei in die Pylontech-Batterien hineinsehen will, wie das BMS aussieht, dem sei das [YouTube-Video von José Faria](https://www.youtube.com/watch?v=BYKeGvza1OM) empfohlen.
