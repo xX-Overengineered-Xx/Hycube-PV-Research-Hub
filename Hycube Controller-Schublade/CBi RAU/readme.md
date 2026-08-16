@@ -20,7 +20,7 @@ Pylontech schreibt "Zum Schutz des Systems sollte zwischen der Batteriebank und 
 
 ### Sicherungsautomat oder Sicherung?
 Die Ein- und Abschaltfunktion (u.a. im Touchscreen des Hycube-Controllers) entfällt auf jeden Fall, da es keinen vergleichbaren fernbedienbaren Leistungsschalter am Markt gibt. Man kann als Ersatz einen normalen Leistungsschalter einbauen oder eine Sicherung. 
-Ein geeigneter Leistungsschalter wäre z.B. ein Heschen HSM1PV-125 (ab 27 €). 
+Ein geeigneter einpoliger Leistungsschalter wäre z.B. ein Heschen HSM1PV-125 (ab 27 €. Zu beachten ist, dass dieser Leistungsschalter richtungssensibel ist. Wenn er den Kurzschlussstrom der Batterie trennen soll, muss die Batterie oben angeschlossen werden.) 
 
 Der "Offgridtec MEGA-Fuse Sicherung Halter" (8 €) hat den Vorteil, dass er Schraubanschlüsse hat, die genau zu den vorhandenen M8-Kabelschuhen passen. Er hat auch ein geschlossenes Gehäuse. Bei den dazu gehörigen MEGA-Sicherungen benötigt man die 58 V-Variante (ab 4 €/Stück).
 
