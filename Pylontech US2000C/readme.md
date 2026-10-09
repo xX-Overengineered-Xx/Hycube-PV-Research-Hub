@@ -89,11 +89,11 @@ Wie bekommt man also Pylontech-Batterien kaputt?
 ## 6. Batterien nachrüsten
 Sollte man sich aus verschiedenen Gründen gut überlegen, ist nur in Ausnahmefällen sinnvoll. 
 Ein Grund ist, dass der Hycube-WR nur einen Teil der PV-Leistung zur Verfügung hat (höchstens 5,2 kW, meist je nach Panel-Belegung weniger) und davon nur einen Teil in die Batterien laden kann (3,36 kW).<br>
-Funktioniert aber problemlos, die neuen Batterien werden auch im Webinterface und Controller angezeigt. Die Verwendung von UC5000-Batterien hat Hycube damals nicht vorgesehen, die werden zwar angezeit, aber ohne bzw. mit falschem Ladezustand. 
+Eine Nachrüstung funktioniert aber problemlos, die neuen Batterien werden auch im Webinterface und Controller angezeigt. Die Verwendung von UC5000-Batterien hat Hycube damals nicht vorgesehen, die werden zwar angezeit, aber ohne bzw. mit falschem Ladezustand. 
 
 Man kann bis zu 16 Pylontech-Batterien in einer logischen Gruppe zusammenschließen, die von einer Masterbatterie verwaltet werden (Betriebsanleitung US2000C v1.4, Seite 12). Der Master ist die letzte Batterie, sollte das neueste Modell sein und bekommt als einziger ein Kabel in seinen RS485-Port für die Kommunikation mit dem WR. (Wie man neue Batterien laden muss, damit sie mit den anderen zusammengeschaltet werden können: Siehe oben, Abschnitt 4. Steht auch in einer Anleitung von Pylontech. Man braucht übrigens keine extra Netzteil, man kann die alten und neuen Batterien nacheinander anschliessen und per WR laden, notfalls jede einzeln.)
 
-Pylontech US2000C werden normalerweise mit 25 A geladen und entladen, so dass die Stromtragfähigkeit der Anschlusskabel beachtet werden muss, 120 A (bzw. 100 A dauerhaft). Demnach müsste man mit einem leistungsfähigen WR schon ab fünf Batterien je zwei Kabel zum WR anschließen.
+Pylontech US2000C werden normalerweise mit 25 A geladen und entladen, so dass die Stromtragfähigkeit der mitgelieferten Pylontech-Anschlusskabel beachtet werden muss, 120 A (bzw. 100 A dauerhaft). Demnach müsste man mit einem leistungsfähigen WR schon ab fünf Batterien je zwei Kabel zum WR anschließen.
 'Glücklicherweise' kann der Hycube-WR die 120 A überhaupt nur sehr kurzzeitig (im Datenblatt 6000 W), beim normalen Entladen sind es 100 A und bei Laden unter 70 A. Das ist für die vorhandenen Kabel und Absicherung gut machbar, egal wieviele Batterien dranhängen.
 
 Die Verkabelung zusätzlicher Batterien ist also beim e.Compact sehr einfach: An die unterste Batterie anschließen und das Kommunikationskabel zur letzten neuen umstecken. 
